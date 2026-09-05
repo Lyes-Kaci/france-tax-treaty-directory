@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this directory in academic or professional work, please cite it using these metadata."
+title: "France Tax Treaty Directory / Annuaire des conventions fiscales conclues par la France"
+type: dataset
+authors:
+  - family-names: Kaci
+    given-names: Lyès
+    orcid: "https://orcid.org/0009-0000-5526-6138"
+version: 1.0.0
+date-released: 2026-09-05
+url: "https://fiscaliteinternationale.fr/conventions-fiscales/"
+repository-code: "https://github.com/Lyes-Kaci/france-tax-treaty-directory"
+abstract: >-
+  Public directory of tax treaties and related instruments concluded by
+  France. The dataset records jurisdictions, instrument references, taxes
+  covered, selected legal-status notices and links to official sources. Version
+  1.0.0 reflects the public directory displayed as of 31 July 2026.
+keywords:
+  - tax treaties
+  - international tax law
+  - France
+  - legal data
+  - double taxation

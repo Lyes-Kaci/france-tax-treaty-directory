@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Lyes-Kaci/france-tax-treaty-directory/raw/main/data/public-catalogue.schema.json",
+  "title": "France tax treaty public directory",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_version",
+    "coverage_date",
+    "counts",
+    "jurisdictions",
+    "signed_not_in_force"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "dataset_version": { "type": "string" },
+    "coverage_date": { "type": "string", "format": "date" },
+    "counts": {
+      "type": "object",
+      "required": ["jurisdictions", "instrument_references", "signed_not_in_force"],
+      "properties": {
+        "jurisdictions": { "type": "integer", "minimum": 0 },
+        "instrument_references": { "type": "integer", "minimum": 0 },
+        "signed_not_in_force": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "taxes", "status", "instruments", "official_links"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "iso_alpha_2": { "type": ["string", "null"], "pattern": "^[A-Z]{2}$" },
+          "iso_numeric": { "type": ["string", "null"], "pattern": "^[0-9]{3}$" },
+          "taxes": { "type": "array" },
+          "status": { "type": "object" },
+          "instruments": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["category", "title", "complementary_act"],
+              "properties": {
+                "category": { "type": "string", "minLength": 1 },
+                "title": { "type": "string", "minLength": 1 },
+                "complementary_act": { "type": "boolean" }
+              }
+            }
+          },
+          "official_links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["scope", "label", "url"],
+              "properties": {
+                "scope": { "type": "string" },
+                "label": { "type": "string" },
+                "url": { "type": "string", "format": "uri", "pattern": "^https://" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "signed_not_in_force": { "type": "array" }
+  }
+}

@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Conventions fiscales conclues par la France</title>
+<style>
+:root{--paper:#E6E9EC;--card:#FCFCFD;--ink:#0E1822;--ink-2:#4E5A67;--ink-3:#8B95A1;
+--rule:#C6CDD5;--rule-2:#DFE3E7;--oxblood:#7A2E2E;--focus:#1B4B7A;
+--sea:#DCE1E6;--land:#CBD2D8;--hit:#3E5C74}
+*{box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{margin:0;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;
+font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.top{padding:9px 22px;background:var(--ink);color:#E8EBEE;flex:none}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand-home{display:flex;justify-content:center;align-items:center;flex:none;background:var(--card);border-bottom:1px solid var(--rule-2);padding:7px 18px 5px}
+.brand-home-link{display:block;width:min(66vw,650px);text-decoration:none}
+.brand-home-logo{display:block;width:100%;height:auto}
+.brand-home-logo-mobile{display:none}
+.brand-home-logo .brand-home-frame{stroke-dasharray:1120;stroke-dashoffset:1120;animation:brand-home-draw 1.3s cubic-bezier(.65,0,.35,1) forwards}
+.brand-home-logo .brand-home-letters{opacity:0;transform:translateY(6px);animation:brand-home-rise .7s ease .85s forwards}
+.brand-home-logo .brand-home-word1{opacity:0;transform:translateY(6px);animation:brand-home-rise .6s ease 1.15s forwards}
+.brand-home-logo .brand-home-word2{opacity:0;transform:translateY(6px);animation:brand-home-rise .6s ease 1.3s forwards}
+.brand-home-logo .brand-home-divider{stroke-dasharray:900;stroke-dashoffset:900;animation:brand-home-line .8s ease 1.5s forwards}
+.brand-home-logo .brand-home-subtitle{opacity:0;animation:brand-home-fade .7s ease 1.85s forwards}
+.brand-home-link:hover .brand-home-frame,.brand-home-link:focus-visible .brand-home-frame{stroke:#7A2E2E}
+.brand-home-link:focus-visible{outline:2px solid var(--focus);outline-offset:4px}
+@keyframes brand-home-draw{to{stroke-dashoffset:0}}
+@keyframes brand-home-line{to{stroke-dashoffset:0}}
+@keyframes brand-home-rise{to{opacity:1;transform:translateY(0)}}
+@keyframes brand-home-fade{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){
+  .brand-home-logo .brand-home-divider,.brand-home-logo .brand-home-frame,.brand-home-logo .brand-home-letters,
+  .brand-home-logo .brand-home-subtitle,.brand-home-logo .brand-home-word1,.brand-home-logo .brand-home-word2{
+    animation:none;opacity:1;stroke-dashoffset:0;transform:none
+  }
+}
+.top h1{margin:0;font-size:13.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase}
+.maj{margin-left:auto;font-size:11.5px;color:#93A0AC;letter-spacing:.03em}
+nav{background:var(--card);border-bottom:1px solid var(--rule);padding:0 22px;display:flex;gap:2px;flex:none}
+nav button{border:0;background:transparent;padding:10px 20px;font:inherit;font-size:14px;color:var(--ink-2);
+cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav button:hover{color:var(--ink)}
+nav button[aria-selected="true"]{color:var(--ink);font-weight:600;border-bottom-color:var(--ink)}
+nav button:focus-visible{outline:2px solid var(--focus);outline-offset:-3px}
+.bar{background:var(--card);border-bottom:1px solid var(--rule-2);padding:8px 22px;
+display:flex;gap:7px;flex-wrap:wrap;align-items:center;position:relative;z-index:5;flex:none}
+.chip{border:1px solid var(--rule);background:#fff;color:var(--ink-2);padding:5px 12px;border-radius:2px;
+font:inherit;font-size:12.5px;cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:var(--ink-3)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+.future-btn{border:1px solid var(--rule);background:#F7F8FA;color:var(--ink-2);padding:5px 12px;border-radius:2px;font:inherit;font-size:12.5px;cursor:pointer;white-space:nowrap}
+.future-btn:hover{border-color:var(--ink-3);color:var(--ink)}
+.future-btn:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+.scope-note{flex-basis:100%;font-size:11.5px;line-height:1.4;color:var(--ink-3);margin-top:1px}
+.n{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-left:auto;white-space:nowrap}
+.wrap{width:100%;max-width:1580px;min-height:0;flex:1;margin:0 auto;padding:0 22px;overflow:hidden}
+body.map-mode .wrap{max-width:none;padding:0 0 12px;overflow-y:auto}
+body.map-mode #mapbox{margin-top:0;border-left:0;border-right:0;border-radius:0}
+body.map-mode .legend{padding:0 22px}
+@media(max-width:600px){
+  .brand-home{padding:5px 10px 4px}
+  .brand-home-link{width:min(92vw,430px)}
+  .brand-home-logo:not(.brand-home-logo-mobile){display:none}
+  .brand-home-logo-mobile{display:block;width:min(54vw,230px);margin:0 auto}
+  .top{padding:8px 14px}
+  .top h1{font-size:11.5px;letter-spacing:.11em}
+  .maj{display:none}
+  .wrap{padding:0 10px}
+  nav{padding:0 6px}
+  nav button{padding:9px 12px}
+  .bar{padding:7px 10px;gap:5px}
+  .chip{padding:4px 8px;font-size:11.5px}
+  .scope-note{font-size:10.5px}
+}
+.brand-home-link{width:min(60vw,590px)}
+.top{position:relative;z-index:12}
+.top-tools{margin-left:auto;display:flex;align-items:center;gap:13px}
+.top-tools .maj{margin-left:0}
+.resource-menu{position:relative}
+.resource-menu-toggle{display:flex;align-items:center;gap:7px;border:1px solid #46525E;background:#182632;color:#E8EBEE;padding:5px 10px;border-radius:2px;font:inherit;font-size:12px;cursor:pointer}
+.resource-menu-toggle:hover,.resource-menu-toggle[aria-expanded="true"]{background:#223544;border-color:#72808D}
+.resource-menu-toggle:focus-visible{outline:2px solid #B7C9DA;outline-offset:2px}
+.resource-menu-panel{position:absolute;right:0;top:calc(100% + 8px);width:min(330px,calc(100vw - 28px));padding:6px;background:#fff;border:1px solid var(--rule);box-shadow:0 12px 32px rgba(10,20,30,.24);border-radius:3px;z-index:20}
+.resource-menu-panel button{display:block;width:100%;border:0;border-bottom:1px solid var(--rule-2);background:#fff;color:var(--ink);padding:9px 10px;text-align:left;font:inherit;font-size:13px;line-height:1.35;cursor:pointer}
+.resource-menu-panel button:last-child{border-bottom:0}
+.resource-menu-panel button:hover,.resource-menu-panel button:focus-visible{background:#EEF2F5;outline:0}
+.resource-menu-panel button span{display:block;margin-bottom:2px;color:var(--ink-3);font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.country-search{position:sticky;top:0;z-index:8;display:flex;justify-content:center;padding:15px 4px 13px;background:linear-gradient(180deg,var(--paper) 84%,rgba(230,233,236,0))}
+.country-search-box{position:relative;width:min(100%,500px)}
+.country-search-shell{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:0 12px;border:1px solid #9EA9B4;border-radius:4px;background:#fff;color:var(--ink-2);box-shadow:0 2px 8px rgba(14,24,34,.08);transition:border-color .15s,box-shadow .15s}
+.country-search-shell:focus-within{border-color:var(--focus);box-shadow:0 0 0 3px rgba(27,75,122,.13),0 3px 10px rgba(14,24,34,.1);color:var(--focus)}
+.country-search svg{width:18px;height:18px;flex:none;stroke:currentColor}
+.country-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;padding:10px 0}
+.country-search input::placeholder{color:#697683;opacity:1}
+.country-suggestions{position:absolute;top:calc(100% + 5px);left:0;right:0;max-height:330px;overflow-y:auto;padding:5px;background:#fff;border:1px solid var(--rule);border-radius:3px;box-shadow:0 12px 28px rgba(10,20,30,.2);z-index:30}
+.country-suggestion{display:flex;align-items:center;gap:10px;width:100%;border:0;border-bottom:1px solid var(--rule-2);background:#fff;color:var(--ink);padding:9px 10px;text-align:left;font:inherit;font-size:14px;cursor:pointer}
+.country-suggestion:last-child{border-bottom:0}
+.country-suggestion:hover,.country-suggestion.is-active,.country-suggestion:focus-visible{background:#E9EFF4;outline:0}
+.country-suggestion .fl{font-size:17px;width:25px}
+.country-suggestion .suggestion-meta{margin-left:auto;color:var(--ink-3);font-size:10.5px;white-space:nowrap}
+.country-suggestion-empty{margin:0;padding:11px 10px;color:var(--ink-2);font-size:13px}
+.country-results{min-height:80px}
+#p-pays.pane.on{scrollbar-width:none;scrollbar-gutter:auto;padding-bottom:34px}
+#p-pays.pane.on::-webkit-scrollbar{display:none}
+.country-columns{column-gap:34px;column-rule:0}
+.verified-sources{margin-top:23px;padding-top:13px;border-top:1px solid var(--rule-2)}
+.verified-sources details{border:1px solid var(--rule-2);background:#F8F9FA}
+.verified-sources summary{cursor:pointer;list-style:none;padding:9px 11px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.verified-sources summary::-webkit-details-marker{display:none}
+.verified-sources summary::after{content:"+";float:right;color:var(--ink-3);font-weight:400}
+.verified-sources details[open] summary::after{content:"−"}
+.resource-list{list-style:none;margin:0;padding:0 11px 9px}
+.resource-list li{padding:8px 0;border-top:1px solid var(--rule-2);font-size:13px;line-height:1.4}
+.resource-kind{display:inline-block;margin-right:7px;color:var(--ink-3);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.source-intro{margin:0 0 14px;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+.oecd-current{margin:0 0 15px;padding:10px 12px;border-left:3px solid var(--focus);background:#F7F8FA;font-size:13px;line-height:1.55;color:var(--ink-2)}
+.oecd-sections{display:grid;gap:9px}
+.oecd-sections details{border:1px solid var(--rule-2);background:#fff}
+.oecd-sections summary{cursor:pointer;list-style:none;padding:10px 12px;font-size:13px;font-weight:600;color:var(--ink)}
+.oecd-sections summary::-webkit-details-marker{display:none}
+.oecd-sections summary::after{content:"+";float:right;color:var(--ink-3);font-weight:400}
+.oecd-sections details[open] summary::after{content:"−"}
+.oecd-sections .resource-list{padding:0 12px 10px}
+.oecd-note{display:block;margin-top:3px;color:var(--ink-3);font-size:11.5px;line-height:1.45}
+@media(max-width:600px){.brand-home-link{width:min(88vw,430px)}.top-tools{width:100%;justify-content:space-between}.top-tools .maj{display:block}.country-search{padding:10px 2px 9px}.country-search-box{width:100%}.country-search-shell{min-height:42px}.country-suggestions{max-height:55vh}}
+.pane{display:none}.pane.on{display:block}
+#p-pays.pane.on{height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:0 0 24px}
+.country-columns{column-count:4;column-gap:28px;column-rule:1px solid var(--rule-2)}
+.letter-group{display:inline-block;width:100%;break-inside:avoid-column;vertical-align:top}
+@media(max-width:1250px){.country-columns{column-count:3}}
+@media(max-width:900px){.country-columns{column-count:2}}
+@media(max-width:600px){.country-columns{column-count:1}}
+.alpha{font-size:11px;letter-spacing:.14em;color:var(--ink-3);padding:15px 4px 5px;border-bottom:1px solid var(--rule-2)}
+.row{display:flex;align-items:center;gap:11px;width:100%;text-align:left;border:0;background:transparent;
+padding:9px 4px;border-bottom:1px solid var(--rule-2);font:inherit;font-size:15px;color:var(--ink);cursor:pointer}
+.row:hover{background:#DDE2E6}
+.row:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+.fl{font-size:19px;line-height:1;width:30px;flex:none;text-align:center}
+.iso{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.04em;color:var(--ink-2);
+border:1px solid var(--rule);border-radius:2px;padding:2px 4px;background:#fff;line-height:1;font-family:ui-monospace,Menlo,monospace}
+.nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.imp{font-size:10.5px;letter-spacing:.06em;color:var(--ink-3);flex:none}
+.warn{color:var(--oxblood);font-size:11px;flex:none}
+.warn.partial{color:#8A5A16}.warn.special{color:#365D78}.warn.limited{color:#657789}
+.future-mark{color:#6B5876;font-size:10.5px;flex:none}
+.cplmark{color:var(--ink);font-size:14px;font-weight:700;flex:none;line-height:1}
+#mapbox{background:var(--sea);border:1px solid var(--rule);border-radius:2px;overflow:hidden;position:relative;margin-top:14px}
+#mapbox svg{display:block;width:100%;height:auto}
+.cty{fill:var(--land);stroke:var(--sea);stroke-width:.4;vector-effect:non-scaling-stroke}
+.cty.has{fill:var(--hit);cursor:pointer}.cty.has:hover{fill:#25455C}
+.cty.partial{fill:#A97832;cursor:pointer}.cty.partial:hover{fill:#8A5A16}
+.cty.limited{fill:#7E96A8;cursor:pointer}.cty.limited:hover{fill:#657789}
+.cty.susp{fill:var(--oxblood);cursor:pointer}
+.cty.off{fill:#E7EAED}
+.cty.esh{fill:#7E96A9;stroke:var(--sea);cursor:pointer}.cty.esh:hover{fill:#657789}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:11px;font-size:12px;color:var(--ink-2)}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;padding:4px 9px;border-radius:2px;
+font-size:12.5px;opacity:0;transition:opacity .12s;white-space:nowrap}
+.fallback{padding:34px 22px;text-align:center;color:var(--ink-2);font-size:14px}
+dialog{position:relative;border:0;padding:0;width:min(820px,calc(100vw - 28px));height:min(78vh,760px);
+min-width:min(520px,calc(100vw - 28px));min-height:380px;max-width:calc(100vw - 28px);max-height:calc(100vh - 28px);
+overflow:hidden;resize:both;border-radius:2px;box-shadow:0 18px 50px rgba(10,20,30,.32)}
+dialog::backdrop{background:rgba(14,24,34,.5)}
+#dlgc{display:flex;flex-direction:column;height:100%;min-height:0}
+.fh{padding:17px 22px;background:var(--ink);color:#fff;display:flex;align-items:center;gap:13px}
+.fh h2{margin:0;font-size:22px;font-weight:600;letter-spacing:-.01em}
+.fh .fl{font-size:26px;width:auto}
+.fh .iso{font-size:12px;padding:3px 6px;background:transparent;border-color:#46525E;color:#C3CBD3}
+.fh .x{margin-left:auto;background:transparent;border:1px solid #46525E;color:#C3CBD3;width:28px;height:28px;
+border-radius:2px;cursor:pointer;font-size:15px;line-height:1;flex:none}
+.fh .x:hover{background:#22303D;color:#fff}
+.fb{flex:1;min-height:0;padding:19px 22px 24px;background:var(--card);overflow-y:auto}
+.resize-hint{position:absolute;right:4px;bottom:2px;z-index:3;color:var(--ink-3);font-size:15px;line-height:1;
+pointer-events:none;text-shadow:0 1px 0 #fff}
+@media(max-width:699px){
+  dialog{width:calc(100vw - 20px);height:calc(100vh - 20px);min-width:0;min-height:0;max-width:none;max-height:none;resize:none}
+  .resize-hint{display:none}
+}
+.mini{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);
+border-bottom:1px solid var(--rule-2);padding-bottom:5px;margin:20px 0 11px}
+.mini:first-child{margin-top:0}
+.ins{list-style:none;margin:0;padding:0}
+.ins li{font-size:14px;line-height:1.5;padding:5px 0 5px 15px;position:relative;border-bottom:1px solid #EEF1F3}
+.ins li:last-child{border-bottom:0}
+.ins li::before{content:"";position:absolute;left:2px;top:12px;width:5px;height:5px;background:var(--ink-3);border-radius:1px}
+.nota{margin:0 0 20px;padding:11px 0 12px;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink)}
+.nota-t{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink);margin-bottom:6px}
+.nota p{margin:0;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+.ins li.cpl{padding-left:15px}
+.ins li.cpl::before{background:var(--ink);width:6px;height:6px}
+.rn{color:var(--ink);font-size:12px;font-weight:700;padding-left:3px}
+.nb{margin-top:26px;padding-top:12px;border-top:1px solid var(--rule-2)}
+.nb p{margin:0 0 6px;font-size:12.5px;line-height:1.55;color:var(--ink-3)}
+.nb p:last-child{margin-bottom:0}
+.lk{margin:9px 0 4px}
+.lk.nolk{font-size:12.5px;color:var(--ink-3);font-style:italic}
+.pills{display:flex;gap:5px;flex-wrap:wrap}
+.pill{font-size:11.5px;border:1px solid var(--rule-2);color:var(--ink-2);padding:3px 9px;border-radius:2px;background:#fff}
+.flag{padding:10px 13px;border-left:3px solid var(--oxblood);background:#F7EEEE;color:#5E2323;
+font-size:13px;border-radius:0 2px 2px 0;margin-bottom:16px}
+.flag.partial{border-left-color:#A97832;background:#FBF5E9;color:#6D4813}.flag.special{border-left-color:#4F708D;background:#EEF4F8;color:#294A61}.flag.limited{border-left-color:#7E96A8;background:#F2F5F7;color:#405563}
+a.src{color:var(--focus);font-size:13.5px;word-break:break-word}
+.leg{font-size:11.5px;color:var(--ink-3);margin-top:13px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="brand-home"><a class="brand-home-link" href="https://fiscaliteinternationale.fr/" target="_top" aria-label="Retour à l’accueil de Fiscalité internationale" title="Retour à l’accueil"><svg class="brand-home-logo" xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360" role="img" aria-labelledby="brand-home-title brand-home-desc"><title id="brand-home-title">Kaci — Fiscalité internationale</title><desc id="brand-home-desc">Monogramme LK bleu nuit dans un cadre fin, accompagné du nom Fiscalité internationale.</desc><rect width="1400" height="360" fill="none"></rect><g fill="none" stroke="#173B61" stroke-width="5"><rect class="brand-home-frame" x="40" y="40" width="280" height="280" rx="2"></rect></g><text class="brand-home-letters" x="180" y="228" text-anchor="middle" fill="#173B61" font-family="Georgia, 'Times New Roman', serif" font-size="126" letter-spacing="-8">LK</text><g fill="#173B61" font-family="Arial, Helvetica, sans-serif"><text class="brand-home-word1" x="390" y="165" font-size="68" font-weight="600" letter-spacing="8">FISCALITÉ</text><text class="brand-home-word2" x="390" y="242" font-size="68" font-weight="300" letter-spacing="5">INTERNATIONALE</text></g><line class="brand-home-divider" x1="392" y1="275" x2="1280" y2="275" stroke="#173B61" stroke-width="2" opacity=".38"></line><text class="brand-home-subtitle" x="393" y="309" fill="#536779" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="1.5">Sources, analyses et outils pour un droit fiscal international plus intelligible</text></svg><svg class="brand-home-logo brand-home-logo-mobile" xmlns="http://www.w3.org/2000/svg" width="600" height="560" viewBox="0 0 600 560" role="img" aria-labelledby="brand-home-mobile-title brand-home-mobile-desc"><title id="brand-home-mobile-title">Kaci — Fiscalité internationale</title><desc id="brand-home-mobile-desc">Version mobile du monogramme LK et du nom Fiscalité internationale.</desc><rect width="600" height="560" fill="none"></rect><g fill="none" stroke="#173B61" stroke-width="5"><rect class="brand-home-frame" x="160" y="25" width="280" height="280" rx="2"></rect></g><text class="brand-home-letters" x="300" y="213" text-anchor="middle" fill="#173B61" font-family="Georgia, 'Times New Roman', serif" font-size="126" letter-spacing="-8">LK</text><g fill="#173B61" font-family="Arial, Helvetica, sans-serif" text-anchor="middle"><text class="brand-home-word1" x="300" y="382" font-size="52" font-weight="600" letter-spacing="6">FISCALITÉ</text><text class="brand-home-word2" x="300" y="445" font-size="38" font-weight="300" letter-spacing="3">INTERNATIONALE</text></g><line class="brand-home-divider" x1="70" y1="485" x2="530" y2="485" stroke="#173B61" stroke-width="2" opacity=".38"></line><text class="brand-home-subtitle" x="300" y="512" text-anchor="middle" fill="#536779" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing=".7"><tspan x="300" y="512">Sources, analyses et outils pour un droit</tspan><tspan x="300" y="536">fiscal international plus intelligible</tspan></text></svg></a></div><div class="top"><h1>Conventions fiscales conclues par la France</h1>
+<div class="top-tools"><span class="maj">À jour au 31 juillet 2026</span>
+<div class="resource-menu">
+<button class="resource-menu-toggle" id="resourceMenuToggle" type="button" aria-expanded="false" aria-controls="resourceMenuPanel">Ressources <span aria-hidden="true">⌄</span></button>
+<div class="resource-menu-panel" id="resourceMenuPanel" hidden>
+<button id="futureTextsButton" type="button"><span>Veille</span>Textes signés non en vigueur · 7</button>
+<button id="officialSourcesButton" type="button"><span>Références</span>Sources officielles</button>
+<button id="oecdResourcesButton" type="button"><span>Doctrine</span>Modèles et Commentaires OCDE</button>
+</div></div></div></div>
+<nav role="tablist">
+<button role="tab" aria-selected="true" data-p="pays">Par pays</button>
+<button role="tab" aria-selected="false" data-p="carte">Carte</button>
+</nav>
+<div class="bar">
+<button class="chip" data-f="IR" aria-pressed="false">Revenu</button>
+<button class="chip" data-f="IF" aria-pressed="false">Fortune</button>
+<button class="chip" data-f="S" aria-pressed="false">Successions</button>
+<button class="chip" data-f="SP" aria-pressed="false">Successions — portée limitée</button>
+<button class="chip" data-f="D" aria-pressed="false">Donations</button>
+<button class="chip" data-f="DP" aria-pressed="false">Donations — portée limitée</button>
+<button class="chip" data-f="DE" aria-pressed="false">Droits d'enregistrement</button>
+
+<span class="n" id="n"></span>
+<span class="scope-note">« Portée limitée » : clause ou accord ciblé, sans répartition générale du droit d’imposer. Les versions consolidées intégrant la CML sont informatives et non opposables.</span>
+</div>
+<div class="wrap">
+<div class="pane on" id="p-pays">
+<div class="country-search">
+<div class="country-search-box">
+<label class="country-search-shell" for="countrySearch">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke-width="1.7"></circle><path d="m16 16 4 4" stroke-width="1.7" stroke-linecap="round"></path></svg>
+<input id="countrySearch" type="search" placeholder="Rechercher ou choisir un pays" aria-label="Rechercher ou choisir un pays" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="countrySuggestions" autocomplete="off" spellcheck="false">
+</label>
+<div class="country-suggestions" id="countrySuggestions" role="listbox" hidden></div>
+</div>
+</div>
+<div class="country-results" id="countryResults" aria-live="polite"></div>
+</div>
+<div class="pane" id="p-carte">
+<div id="mapbox"><div class="fallback" id="mapmsg">Chargement du fond de carte…</div><div class="tip" id="tip"></div></div>
+<div class="legend">
+<span><i style="background:var(--hit)"></i>Convention ou dispositif en vigueur</span>
+<span><i style="background:#A97832"></i>Suspension partielle</span>
+<span><i style="background:var(--oxblood)"></i>Suspendue ou dénoncée</span>
+<span><i style="background:#7E96A8"></i>Accord de portée limitée</span>
+<span><i style="background:#E7EAED"></i>Exclu par les filtres</span>
+<span><i style="background:var(--land)"></i>Aucune convention</span>
+</div>
+</div>
+</div>
+<dialog id="dlg"><div id="dlgc"></div></dialog>
+<script>
+/* =====================================================================
+   ANNUAIRE GÉNÉRAL DES CONVENTIONS FISCALES CONCLUES PAR LA FRANCE
+   =====================================================================
+   Sources principales : DGFiP, BOFiP BOI-ANNX-000306 et textes officiels.
+   Projection publique du corpus canonique v3.2BG au 31 juillet 2026.
+
+   Cette page recense les relations conventionnelles, les impôts couverts,
+   les instruments, leur statut et les liens officiels utiles. Elle n'indexe
+   pas les articles conventionnels et ne formule aucune conclusion automatique.
+   ===================================================================== */
+
+var CONVENTIONS = {
+  "Espagne": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/espagne/version-consolidee-de-la-convention-entre-la-france-et-lespagne-modifiee-par-la-convention-multilaterale.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/espagne/espagne_convention-avec-l-espagne-successions_fd_1427.pdf",
+    "protocole": "présent"
+  },
+  "Afrique du Sud": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/afrique_du_sud/afrique-du-sud_convention_cml.pdf"
+  },
+  "Albanie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/albanie/albanie_version_consolidee_convention_avec_albanie_modifiee_par_convention_multilaterale.pdf",
+    "protocole": "présent"
+  },
+  "Algérie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/algerie/algerie_convention-avec-l-algerie_fd_1720.pdf",
+    "protocole": "présent"
+  },
+  "Allemagne": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/allemagne/version-consolidee-de-la-convention-avec-lallemagne-modifiee-par-la-convention-multilaterale---impots-sur-le-revenu-et-la-fortune-1959.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/allemagne/allemagne_convention-avec-l-allemagne-successions-et-donations-en-vigueur-au-03.04.2009_fd_4003.pdf"
+  },
+  "Andorre": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/andorre/version-consolidee-de-la-convention-avec-andorre-modifiee-par-la-convention-multilaterale.pdf",
+    "protocole": "présent"
+  },
+  "Arabie Saoudite": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/arabie_saoudite/convention_arabie_saoudite_modifiee_cml_clause_npf.pdf"
+  },
+  "Argentine": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/argentine/nid_28289_argentine_consolidee_cml.pdf"
+  },
+  "Arménie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/armenie/27156_armenie_convention_version-consolidee_cml.pdf",
+    "protocole": "présent"
+  },
+  "Australie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/australie/version-consolidee-australie.pdf",
+    "protocole": "présent"
+  },
+  "Autriche": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/autriche/convention_avec_lautriche_modifiee_par_la_cml.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/autriche/autriche_convention-avec-l-autriche-successions_fd_1796.pdf",
+    "protocole": "présent"
+  },
+  "Azerbaïdjan": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/azerbaidjan/nid_28290_azerbaidjan_consolidee_cml.pdf"
+  },
+  "Bahreïn": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/bahrein/bahrein_convention_cml.pdf"
+  },
+  "Bangladesh": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/bangladesh/bangladesh_convention-avec-le-bangladesh_fd_1726.pdf"
+  },
+  "Belgique": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/belgique/convention_belgigue_cml.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/belgique/belgique_convention-avec-la-belgique-successions-droits-d-enregistrement_fd_1426.pdf"
+  },
+  "Bénin": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/benin/benin_convention-avec-le-benin_fd_1727.pdf"
+  },
+  "Bolivie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/bolivie/bolivie_convention-avec-la-bolivie_fd_1731.pdf",
+    "protocole": "présent"
+  },
+  "Bosnie-Herzégovine": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/bosnie-herzegovine/version_consolidee_de_la_convention_applicable_entre_la_bosnie-herzegovine_et_la_france_modifiee_par_la_convention_multilaterale.pdf"
+  },
+  "Botswana": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/botswana/Convention_avec%20_le_Botswana_modifiee_par_l_avenant_entre_en_vigueur_le_20210101.pdf"
+  },
+  "Brésil": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/bresil/bresil_convention-avec-le-bresil_fd_1799.pdf"
+  },
+  "Bulgarie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/bulgarie/bulgarie_convention_ir_modifiee_cml.pdf"
+  },
+  "Burkina Faso": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/burkina-faso/version-consolidee-burkina-faso.pdf"
+  },
+  "Cameroun": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/cameroun/convention-avec-le-cameroun-modifiee-par-la-cml.pdf"
+  },
+  "Canada": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/canada/convention_avec_le_canada_modifiee_par_la_cml.pdf"
+  },
+  "Chili": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/chili/25247_chili_version_consolidee_cml_clause_nation_plus_favorisee.pdf"
+  },
+  "Chine": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/chine/nid_26158_version_consolidee_accord_chine_france_modifie_par_convention_multilaterale.pdf",
+    "protocole": "présent"
+  },
+  "Chypre": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/chypre/version_consolidee_de_la_convention_avec_chypre_modifiee_par_la_convention_multilaterale.pdf"
+  },
+  "Colombie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/colombie/colombie_25_06_2015.pdf",
+    "protocole": "présent"
+  },
+  "Congo": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/congo/congo_convention-avec-le-congo_fd_1820.pdf"
+  },
+  "Corée du Sud": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/coree_du_sud/coree-du-sud_consolidee_modifiee_convention_multilaterale.pdf.pdf"
+  },
+  "Côte d'Ivoire": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/cote_d_ivoire/27129_cote-ivoire-version-consolidee-cml.pdf"
+  },
+  "Croatie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/croatie/version_consolidee_convention_croatie_modifiee_par_convention_multilaterale.pdf"
+  },
+  "Danemark": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/danemark/convention-avec-le-danemark.2022.pdf",
+    "protocole": "présent"
+  },
+  "Égypte": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/egypte/version-consolidee-egypte.pdf",
+    "protocole": "présent"
+  },
+  "Émirats arabes unis": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/emirats_arabes_unis/emirats_convention_cml.pdf"
+  },
+  "Équateur": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/equateur/equateur_convention-avec-l-equateur_fd_1823.pdf"
+  },
+  "Estonie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/estonie/estonie_version_consolidee_npf.pdf",
+    "protocole": "présent"
+  },
+  "États-Unis": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/etats-unis/etats-unis_convention-avec-les-etats-unis-impot-sur-le-revenu-impot-sur-la-fortune_fd_1835.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/etats-unis/etats-unis_convention-avec-les-etats-unis-successions-donations_fd_1836.pdf"
+  },
+  "Éthiopie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ethiopie/ethiopie_convention.pdf"
+  },
+  "Finlande": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/finlande/version-consolidee-cml-finlande.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/finlande/finlande_convention-avec-la-finlande-droits-de-mutation-par-deces_fd_1852.pdf"
+  },
+  "Gabon": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/gabon/gabon_gabon-1995_fd_4673.pdf"
+  },
+  "Géorgie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/georgie/convention_avec_la_georgie_modifiee_par_la_cml.pdf",
+    "protocole": "présent"
+  },
+  "Ghana": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ghana/ghana_convention-avec-le-ghana_fd_1837.pdf"
+  },
+  "Grèce": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/grece/nid_26932_grece_2022.pdf",
+    "protocole": "présent"
+  },
+  "Guinée": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/guinee/guinee_convention-avec-la-guinee_fd_2923.pdf"
+  },
+  "Hong Kong": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/hong_kong/version-consolidee-de-laccord-entre-hong-kong-et-la-france-modifie-par-la-convention-multilaterale.pdf",
+    "protocole": "présent"
+  },
+  "Hongrie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/hongrie/hongrie_convention_modifiee_cml.pdf",
+    "protocole": "présent"
+  },
+  "Île Maurice": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ile_maurice/convention_avec_l_ile_maurice_modifiee_par_la_cml_v2.pdf"
+  },
+  "Inde": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/inde/version_consolidee_de_la_convention_avec_inde_modifiee_par_la_convention_multilaterale.pdf",
+    "protocole": "présent"
+  },
+  "Indonésie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/indonesie/Convention%20avec%20l%20Indonesie%20modifiee%20par%20la%20CML.pdf"
+  },
+  "Iran": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/iran/iran_convention-avec-l-iran_fd_1881.pdf"
+  },
+  "Irlande": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/irlande/irlande_modifiee_cml_20190805.pdf"
+  },
+  "Islande": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/islande/version_consolidee_de_la_convention_avec_lislande_modifiee_par_la_convention_multilaterale.pdf"
+  },
+  "Israël": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/israel/israel_convention_cml.pdf"
+  },
+  "Italie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/italie/italie_convention-avec-l-italie-impot-sur-le-revenu-impot-sur-la-fortune_fd_1736.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/italie/italie_convention-avec-l-italie-successions_fd_1781.pdf",
+    "protocole": "présent"
+  },
+  "Jamaïque": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/jamaique/jamaique_convention-avec-la-jamaique_fd_1857.pdf"
+  },
+  "Japon": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/japon/japon-convention-cml.pdf"
+  },
+  "Jordanie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/jordanie/jordanie_convention_modifiee_cml.pdf"
+  },
+  "Kazakhstan": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/kazakhstan/kazakhstan_modifiee_cml.pdf",
+    "protocole": "présent"
+  },
+  "Kenya": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/kenya/nid_26934_kenya_modifiee_cml_clause_npf.pdf",
+    "protocole": "présent"
+  },
+  "Koweït": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/koweit/koweit_convention-avec-le-koweit_fd_1912.pdf",
+    "protocole": "présent"
+  },
+  "Lettonie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/lettonie/lettonie---version-consolidee-cml--npf.pdf",
+    "protocole": "présent"
+  },
+  "Liban": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/liban/liban_convention-avec-le-liban_fd_1916.pdf",
+    "protocole": "présent"
+  },
+  "Libye": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/libye/libye_convention-avec-la-libye-signee-le-22.12.05-texte-entre-en-vigueur-le-01.07.2008_fd_3713.pdf"
+  },
+  "Lituanie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/lituanie/nid_12909_convention_avec_la_lituanie_modifiee_par_la_cml.pdf",
+    "protocole": "présent"
+  },
+  "Luxembourg": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/luxembourg/nid_13316_convention_fr_lux_consolidee.pdf",
+    "protocole": "présent"
+  },
+  "Macédoine du Nord": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/macedoine/nid_6149_macedoine.pdf",
+    "protocole": "présent"
+  },
+  "Madagascar": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/madagascar/madagascar_convention-avec-madagascar_fd_1918.pdf"
+  },
+  "Malaisie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/malaisie/Convention%20avec%20la%20Malaisie%20modifiee%20par%20la%20CML.pdf"
+  },
+  "Malawi": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/malawi/malawi_convention-avec-le-malawi_fd_1958.pdf"
+  },
+  "Mali": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/mali/mali_convention-avec-le-mali_fd_1919.pdf"
+  },
+  "Malte": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/malte/accord_avec_malte_modifiee_par_la_cml.pdf",
+    "protocole": "présent"
+  },
+  "Maroc": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/maroc/maroc_convention-avec-le-maroc_fd_2177.pdf"
+  },
+  "Mauritanie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/mauritanie/mauritanie_convention-avec-la-mauritanie_fd_1942.pdf"
+  },
+  "Mexique": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/mexique/version-consolidee-de-la-convention-avec-le-mexique-modifiee-par-la-convention-multilaterale---impots-sur-le-revenu.pdf",
+    "protocole": "présent"
+  },
+  "Moldavie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/moldavie/convention_franco-moldave.pdf",
+    "protocole": "présent"
+  },
+  "Monaco": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/monaco/convention_avec_monaco_modifiee_par_la_cml.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/monaco/monaco_convention-avec-monaco-successions_fd_1968.pdf"
+  },
+  "Mongolie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/mongolie/nid_28291_mongolie_consilidee_cml.pdf",
+    "protocole": "présent"
+  },
+  "Monténégro": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ex_yougoslavie/convention-avec-l-ex-yougoslavie_fd_1730.pdf",
+    "protocole": "présent"
+  },
+  "Namibie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/namibie/namibie_convention-avec-la-namibie_fd_1432.pdf"
+  },
+  "Niger": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/niger/niger_convention-avec-le-niger_fd_1962.pdf"
+  },
+  "Nigeria": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/nigeria/nigeria_convention-avec-le-nigeria_fd_1963.pdf"
+  },
+  "Norvège": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/norvege/norvege_convention-avec-la-norvege_fd_1966.pdf",
+    "protocole": "présent"
+  },
+  "Nouvelle-Calédonie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/nouvelle-caledonie/nouvelle-caledonie_convention-avec-la-nouvelle-caledonie_fd_2175.pdf",
+    "protocole": "présent"
+  },
+  "Nouvelle-Zélande": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/nouvelle-zelande/convention_avec_la_nouvelle_zelande_modifiee_par_la_cml.pdf",
+    "protocole": "présent"
+  },
+  "Oman": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/oman/oman_convention_modifiee_cml.pdf",
+    "protocole": "présent"
+  },
+  "Ouzbékistan": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ouzbekistan/ouzbekistan_convention-avec-l-ouzbekistan_fd_2348.pdf",
+    "protocole": "présent"
+  },
+  "Pakistan": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/pakistan/version-consolidee-pakistan.pdf"
+  },
+  "Panama": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/panama/version_consolidee_convention_panama_france_modifiee_convention_multilaterale.pdf"
+  },
+  "Pays-Bas": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/pays-bas/pays-bas_modifiee_cml_20190805.pdf"
+  },
+  "Philippines": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/philippines/philippines_convention-avec-les-philippines_fd_2099.pdf"
+  },
+  "Pologne": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/pologne/convention_avec_la_pologne_modifiee_par_la_cml.pdf",
+    "protocole": "présent"
+  },
+  "Polynésie française": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/polynesie-francaise/polynesie-francaise_convention-avec-la-polynesie-francaise_fd_1994.pdf"
+  },
+  "Portugal": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/portugal/nid-13642_convention_avec_le_portugal_modifiee_par_la_cml.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/portugal/portugal_accord-avec-le-portugal-successions_fd_1783.pdf"
+  },
+  "Qatar": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/qatar/qatar_convention_modifiee_par_cml_2021-12-29.pdf"
+  },
+  "Québec": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/quebec/quebec_convention-avec-le-quebec_fd_2098.pdf"
+  },
+  "République centrafricaine": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/centrafrique/centrafricaine-republique_convention-avec-la-republique-centrafricaine_fd_1813.pdf"
+  },
+  "République tchèque": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/republique_tcheque/version_consolidee_de_la_convention_avec_la_republique_tcheque_modifiee_par_la_convention_multilaterale.pdf",
+    "protocole": "présent"
+  },
+  "Roumanie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/roumanie/version-consolidee-de-la-convention-avec-la-roumanie-modifiee-par-la-convention-multilaterale---impots-sur-le-revenu-et-la-fortune.pdf"
+  },
+  "Royaume-Uni": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/royaume-uni/convention_avec_le_ru_modifiee_par_la_cml.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/royaume-uni/royaume-uni_convention-avec-le-royaume-uni-successions_fd_1790.pdf",
+    "protocole": "présent"
+  },
+  "Russie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/russie/convention_russie_cml.pdf"
+  },
+  "Saint-Martin": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/saint-martin/saint-martin_convention-avec-saint-martin-signee-le-21.12.2010-en-vigueur-au-01.05.2011_fd_6011.pdf",
+    "protocole": "présent"
+  },
+  "Saint-Pierre-et-Miquelon": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/saint-pierre-et-miquelon/saint-pierre-et-miquelon_convention-avec-saint-pierre-et-miquelon_fd_2184.pdf"
+  },
+  "Sénégal": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/senegal/senegal_modifiee_cml.pdf"
+  },
+  "Serbie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/serbie/serbie_modifiee_cml_20190805.pdf",
+    "protocole": "présent"
+  },
+  "Singapour": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/singapour/singapour_convention_cml.pdf",
+    "protocole": "présent"
+  },
+  "Slovaquie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/slovaquie/convention_avec_la_slovaquie_modifiee_par_la_cml.pdf"
+  },
+  "Slovénie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/slovenie/convention_avec_la_slovenie_modifiee_par_la_cml.pdf"
+  },
+  "Sri Lanka": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/sri_lanka/sri-lanka_convention-avec-le-sri-lanka_fd_1972.pdf"
+  },
+  "Suède": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/suede/suede_convention-avec-la-suede-impot-sur-le-revenu-impot-sur-la-fortune_fd_2112.pdf",
+    "succ": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/suede/suede_convention-avec-la-suede-donations-successions_fd_2113.pdf",
+    "protocole": "présent"
+  },
+  "Suisse": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/suisse/suisse_convention-avec-la-suisse-impots-sur-le-revenu-et-sur-la-fortune_fd_2125.pdf",
+    "lib": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/suisse/suisse_accord-avec-la-suisse-liberalites_fd_2119.pdf"
+  },
+  "Syrie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/syrie/syrie_convention-avec-la-syrie-du-17.07.1998-entree-en-vigueur-le-01.05.2009_fd_5541.pdf"
+  },
+  "Thaïlande": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/thailande/thailande_modifiee_cml.pdf"
+  },
+  "Togo": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/togo/togo_convention-avec-le-togo_fd_1969.pdf",
+    "protocole": "présent"
+  },
+  "Trinité-et-Tobago": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/trinite_et_tobago/trinite-et-tobago_convention-entre-la-france-et-trinite-et-tobago_fd_1804.pdf"
+  },
+  "Tunisie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/tunisie/nid_27638_tunisie_version_consolidee_cml.pdf"
+  },
+  "Turquie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf"
+  },
+  "Ukraine": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ukraine/convention_avec_lukraine_modifiee_par_la_cml.pdf",
+    "protocole": "présent"
+  },
+  "Venezuela": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/venezuela/venezuela_convention-avec-le-venezuela_fd_1733.pdf",
+    "protocole": "présent"
+  },
+  "Vietnam": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/viet-nam/27150_vietnam-version-consolidee-cml.pdf",
+    "protocole": "présent"
+  },
+  "Zambie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/zambie/zambie_convention-avec-la-zambie_fd_1729.pdf"
+  },
+  "Zimbabwe": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/zimbabwe/zimbabwe_convention-avec-le-zimbabwe_fd_1728.pdf"
+  },
+  "Taïwan": {
+    "ir": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023364028"
+  },
+  "Saint-Barthélemy": {
+    "ir": "https://bofip-archives.impots.gouv.fr/bofip/25779-AIDA.html/identifiant%3D-20120314"
+  }
+};
+
+/* Juridictions relevant d'une convention commune. */
+var CONVENTIONS_COMMUNES = {
+  "Biélorussie": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ex_urss/fichedescriptive_62371.pdf"
+  },
+  "Kirghizistan": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ex_urss/fichedescriptive_62371.pdf"
+  },
+  "Turkménistan": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ex_urss/fichedescriptive_62371.pdf"
+  },
+  "Kosovo": {
+    "ir": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ex_yougoslavie/convention-avec-l-ex-yougoslavie_fd_1730.pdf"
+  }
+};
+
+/* Pays/territoires sans convention couvrant l'impôt sur le revenu — à signaler comme tels. */
+var SANS_CONVENTION_IR = [
+  "Taïwan (Territoire de) — FIGURE BIEN dans la liste officielle BOI-ANNX-000306 avec la mention « IR » : il ne s'agit pas d'une convention internationale mais d'un dispositif UNILATÉRAL DE DROIT INTERNE (article 77 de la loi n° 2010-1658 du 29 décembre 2010 de finances rectificative pour 2010), qui fixe des règles destinées à éviter la double imposition et à prévenir la fraude et l'évasion fiscales avec Taïwan — solution rendue nécessaire par l'absence de reconnaissance diplomatique de Taïwan par la France, empêchant la conclusion d'un traité en bonne et due forme. Classé ici hors CONVENTIONS pour cette raison de nature juridique, mais l'impôt sur le revenu est bien couvert en pratique.",
+  "Mayotte (convention éteinte depuis le 1er janvier 2014)",
+  "Tadjikistan (convention éteinte depuis le 1er janvier 2015)",
+  "Saint-Barthélemy (accord particulier du 14 septembre 2010 limité à l'échange de renseignements — AUCUNE convention sur le revenu ; entrée AJOUTÉE lors de la vérification croisée avec la liste officielle BOI-ANNX-000306, absente des versions précédentes de cet index par omission)"
+];
+
+// META[pays] = [iso2, isoNum, impots[], instruments[], mention]
+// Instruments transcrits de BOI-ANNX-000306 (en vigueur au 1er janvier 2026).
+// C = convention · A = avenant · AP = accord particulier · EDL = échange de lettres
+// AA = arrangement administratif · JO = Journal officiel · R = rectificatif
+var META = {
+"Afrique du Sud":["ZA","710",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 8 novembre 1993 (Journal officiel du 23 novembre 1995)"]}],""],
+"Albanie":["AL","008",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 24 décembre 2002 (Journal officiel du 21 octobre 2005)"]}],""],
+"Algérie":["DZ","012",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 17 octobre 1999 (Journal officiel du 26 décembre 2002)"]}],""],
+"Allemagne":["DE","276",["IR","IF","S","D"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 21 juillet 1959 (Journal officiel du 8 novembre 1961 et rectificatif du 9 janvier 1962)", "Avenant du 9 juin 1969 (Journal officiel du 22 novembre 1970)", "Avenant du 28 septembre 1989 (Journal officiel du 7 novembre 1990)", "Avenant du 20 décembre 2001 (Journal officiel du 20 septembre 2003)", "Avenant du 31 mars 2015 (Journal officiel du 24 janvier 2016)"]}, {"m": "Travailleurs frontaliers", "a": ["Arrangement administratif du 16 février 2006"]}, {"m": "Successions et donations", "a": ["Convention du 12 octobre 2006 (Journal officiel du 2 mai 2009)"]}],""],
+"Andorre":["AD","020",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 2 avril 2013 (Journal officiel du 19 juillet 2015)", "Accord particulier du 22 septembre 2009 (Journal officiel du 9 janvier 2011)"]}],""],
+"Arabie Saoudite":["SA","682",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 18 février 1982 (Journal officiel du 6 juillet 1983)", "Échange de lettres des 20 décembre 1988 et 22 février 1989 (Journal officiel du 14 juin 1989)", "Avenant du 2 octobre 1991 (Journal officiel du 3 septembre 1995)", "Échange de lettres des 16 juin et 31 octobre 1993", "Échange de lettres des 3 janvier 1994 et 3 mai 1995 (Journal officiel du 3 septembre 1995)", "Échange de lettres des 9 septembre 1998 et 2 janvier 1999 (Journal officiel du 4 juin 1999)", "Échange de lettres des 14 avril et 6 juillet 2003 (Journal officiel du 24 décembre 2003)", "Échange de lettres des 27 novembre et 30 décembre 2008 (Journal officiel du 20 juin 2009)", "Avenant du 18 février 2011 (Journal officiel du 10 juillet 2012)", "Échange de lettres des 26 décembre 2013 et 25 mai 2014 (Journal officiel du 13 septembre 2014)", "Échange de lettres des 11 juin et 10 décembre 2018 (Journal officiel du 27 novembre 2019)", "Échange de lettres des 14 et 28 décembre 2023 (Journal officiel du 16 mars 2024)"]}],""],
+"Argentine":["AR","032",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 4 avril 1979 (Journal officiel du 10 mars 1981)", "Avenant du 15 août 2001 (Journal officiel du 12 octobre 2007)", "Échange de lettres des 28 mai 2018 et 29 janvier 2019"]}],""],
+"Arménie":["AM","051",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 9 décembre 1997 (Journal officiel du 31 mai 2001)", "Avenant des 5 février 2003 et 3 février 2004 (Journal officiel du 15 mai 2007)"]}],""],
+"Australie":["AU","036",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 20 juin 2006 (Journal officiel du 21 juin 2009)"]}],""],
+"Autriche":["AT","040",["IR","IF","S","D"],[{"m": "Impôt sur le revenu", "a": ["Convention du 26 mars 1993 (Journal officiel du 14 décembre 1994)", "Avenant du 23 mai 2011 (Journal officiel du 27 juin 2012)"]}, {"m": "Successions et donations", "a": ["Convention du 26 mars 1993 (Journal officiel du 20 décembre 1994)"]}],""],
+"Azerbaïdjan":["AZ","031",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 20 décembre 2001 (Journal officiel du 21 octobre 2005)"]}],""],
+"Bahreïn":["BH","048",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 10 mai 1993 (Journal officiel du 6 août 1994)", "Avenant du 7 mai 2009 (Journal officiel du 28 décembre 2010)"]}],""],
+"Bangladesh":["BD","050",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 9 mars 1987 (Journal officiel du 30 août 1988)"]}],""],
+"Belgique":["BE","056",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention du 10 mars 1964 (Journal officiel du 15 août 1965 et rectificatif du 9 octobre 1965)", "Avenant du 15 février 1971 (Journal officiel du 6 décembre 1973)", "Avenant du 8 février 1999 (Journal officiel du 24 juin 2000)", "Avenant du 12 décembre 2008 (Journal officiel du 13 janvier 2010)", "Avenant du 7 juillet 2009 (Journal officiel du 3 octobre 2013)", "Convention du 12 août 1843"]}, {"m": "Successions et droits d'enregistrement", "a": ["Convention du 20 janvier 1959 (Journal officiel du 19 août 1960 et rectificatif du 9 janvier 1962)"]}],""],
+"Bénin":["BJ","204",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention du 27 février 1975 (Journal officiel du 10 janvier 1978)"]}],""],
+"Biélorussie":["BY","112",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 4 octobre 1985 (ex-URSS) (Journal officiel du 28 mai 1987)", "Échange de lettres du 14 mars 1967 (Journal officiel du 21 mars 1968)"]}],"Suspension partielle de la convention à compter du 1er juin 2024."],
+"Bolivie":["BO","068",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 décembre 1994 (Journal officiel du 30 novembre 1996)"]}],""],
+"Bosnie-Herzégovine":["BA","070",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 mars 1974 (ex-Yougoslavie) (Journal officiel du 13 septembre 1975)", "Échange de lettres des 3 et 4 décembre 2003 (Journal officiel du 31 janvier 2004)"]}],""],
+"Botswana":["BW","072",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 avril 1999 (Journal officiel du 12 juin 2003)", "Avenant du 27 juillet 2017 (Journal officiel du 29 septembre 2021)"]}],""],
+"Brésil":["BR","076",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 10 septembre 1971 (Journal officiel du 28 novembre 1972)", "Échange de lettres des 5 février et 4 mars 1974"]}],""],
+"Bulgarie":["BG","100",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 14 mars 1987 (Journal officiel du 19 avril 1988)"]}],""],
+"Burkina Faso":["BF","854",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 11 août 1965 (Journal officiel du 1er juin 1967)", "Avenant du 3 juin 1971 (Journal officiel du 17 mai 1975)"]}],"Suspension du 8 novembre 2023 au 31 décembre 2024, suivie de la dénonciation à compter du 1er janvier 2025."],
+"Cameroun":["CM","120",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 21 octobre 1976 (Journal officiel du 11 septembre 1979)", "Avenant du 31 mars 1994 (Journal officiel du 26 janvier 1997)", "Avenant du 28 octobre 1999 (Journal officiel du 11 janvier 2003)"]}],""],
+"Canada":["CA","124",["IR","IF","SP","DP"],[{"m": "Impôt sur le revenu", "a": ["Convention du 2 mai 1975 (Journal officiel du 10 octobre 1976)", "Avenant du 16 janvier 1987 (Journal officiel du 13 octobre 1988)", "Avenant du 30 novembre 1995 (Journal officiel du 16 septembre 1998)", "Avenant du 2 février 2010 (Journal officiel du 15 janvier 2014)"]}],"",["Entente fiscale distincte avec le Québec du 1er septembre 1987","https://www.impots.gouv.fr/sites/default/files/media/10_conventions/quebec/quebec_convention-avec-le-quebec_fd_2098.pdf"]],
+"Chili":["CL","152",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 juin 2004 (Journal officiel du 3 septembre 2006)"]}],""],
+"Chine":["CN","156",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 26 novembre 2013 (Journal officiel du 3 janvier 2015, rectificatif du 17 janvier 2015 et du 28 février 2015)"]}],""],
+"Chypre":["CY","196",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 18 décembre 1981 (Journal officiel du 30 mars 1983)"]}],""],
+"Colombie":["CO","170",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 25 juin 2015 (Journal officiel du 23 janvier 2022)"]}],""],
+"Congo":["CG","178",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention du 27 novembre 1987 (Journal officiel du 15 septembre 1989)"]}],""],
+"Corée du Sud":["KR","410",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 19 juin 1979 (Journal officiel du 6 février 1981)", "Avenant du 9 avril 1991 (Journal officiel du 3 juin 1992)"]}],""],
+"Côte d'Ivoire":["CI","384",["IR","IF","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 6 avril 1966 (Journal officiel du 22 janvier 1969)", "Avenant du 25 février 1985 (Journal officiel du 25 février 1989)", "Avenant du 19 octobre 1993 (Journal officiel du 6 mai 1995)", "Échange de lettres des 16 mai et 14 juin 1995 (Journal officiel du 30 novembre 1995)"]}],""],
+"Croatie":["HR","191",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 19 juin 2003 (Journal officiel du 21 octobre 2005)"]}],""],
+"Danemark":["DK","208",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 4 février 2022 (Journal officiel du 7 janvier 2024)"]}],""],
+"Égypte":["EG","818",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 19 juin 1980 (Journal officiel du 25 janvier 1983)", "Avenant du 1er mai 1999 (Journal officiel du 22 mai 2004)"]}],""],
+"Émirats arabes unis":["AE","784",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 19 juillet 1989 (Journal officiel du 19 juillet 1990)", "Avenant du 6 décembre 1993 (Journal officiel du 21 juin 1995)"]}],""],
+"Équateur":["EC","218",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 16 mars 1989 (Journal officiel du 8 mai 1992)"]}],""],
+"Espagne":["ES","724",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 10 octobre 1995 (Journal officiel du 11 juillet 1997)", "Échange de lettres du 19 février 1998", "Échange de lettres du 26 novembre 2002", "Échange de lettres des 1er mars et 22 avril 2005", "Échange de lettres des 22 décembre 2003 et 1er mars 2005"]}, {"m": "Successions", "a": ["Convention du 8 janvier 1963 (Journal officiel du 7 janvier 1964 et rectificatif du 22 janvier 1964)"]}],""],
+"Estonie":["EE","233",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 octobre 1997 (Journal officiel du 31 mai 2001)"]}],""],
+"États-Unis":["US","840",["IR","IF","S","D"],[{"m": "Impôt sur le revenu", "a": ["Convention des 31 août 1994 et EDL 19 et 20 décembre 1994 (Journal officiel du 22 mars 1996)", "Avenant du 8 décembre 2004 (Journal officiel du 24 janvier 2007)", "Avenant du 13 janvier 2009 (Journal officiel du 10 janvier 2010)"]}, {"m": "Successions et donations", "a": ["Convention du 24 novembre 1978 (Journal officiel du 1er octobre 1980)", "Avenant du 8 décembre 2004 (Journal officiel du 24 janvier 2007)"]}],""],
+"Éthiopie":["ET","231",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 juin 2006 (Journal officiel du 31 juillet 2008)"]}],""],
+"Finlande":["FI","246",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 11 septembre 1970 (Journal officiel du 22 avril 1972)"]}, {"m": "Successions", "a": ["Convention du 25 août 1958 (Journal officiel du 27 août 1959)"]}],""],
+"Gabon":["GA","266",["IR","IF","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention du 20 septembre 1995 (Journal officiel du 23 mars 2008)"]}],""],
+"Géorgie":["GE","268",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 mars 2007 (Journal officiel du 3 juin 2010)"]}],""],
+"Ghana":["GH","288",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 5 avril 1993 (Journal officiel du 14 mai 1997)"]}],""],
+"Grèce":["GR","300",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 11 mai 2022 (Journal officiel du 10 janvier 2024)"]}],""],
+"Guinée":["GN","324",["IR","IF","S","D"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 février 1999 (Journal officiel du 26 septembre 2004)"]}],""],
+"Hong Kong":["HK","344",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 21 octobre 2010 (Journal officiel du 7 décembre 2011)"]}],""],
+"Hongrie":["HU","348",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 avril 1980 (Journal officiel du 6 janvier 1982)"]}],""],
+"Île Maurice":["MU","480",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 11 décembre 1980 (Journal officiel du 27 octobre 1982)", "Avenant du 23 juin 2011 (Journal officiel du 27 juin 2012)"]}],""],
+"Inde":["IN","356",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 29 septembre 1992 (Journal officiel du 6 août 1994)"]}],""],
+"Indonésie":["ID","360",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 14 septembre 1979 (Journal officiel du 14 avril 1981)"]}],""],
+"Iran":["IR","364",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 novembre 1973 (Journal officiel du 30 avril 1975)"]}],""],
+"Irlande":["IE","372",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 21 mars 1968 (Journal officiel du 10 septembre 1971)"]}],""],
+"Islande":["IS","352",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 29 août 1990 (Journal officiel du 23 juin 1992)"]}],""],
+"Israël":["IL","376",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 31 juillet 1995 (Journal officiel du 18 septembre 1996)"]}],""],
+"Italie":["IT","380",["IR","IF","S","D"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 5 octobre 1989 (Journal officiel du 8 mai 1992 et rectificatif du 27 février 1993)", "Échange de lettres des 7 et 28 juillet 1998", "Échange de lettres du 20 décembre 2000"]}, {"m": "Successions et donations", "a": ["Convention du 20 décembre 1990 (Journal officiel du 4 avril 1995)"]}],""],
+"Jamaïque":["JM","388",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 9 août 1995 (Journal officiel du 9 octobre 1998)"]}],""],
+"Japon":["JP","392",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 3 mars 1995 (Journal officiel du 16 mai 1996)", "Avenant et échange de lettres du 11 janvier 2007 (Journal officiel du 29 novembre 2007)"]}],""],
+"Jordanie":["JO","400",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 28 mai 1984 (Journal officiel du 10 avril 1985)"]}],""],
+"Kazakhstan":["KZ","398",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 3 février 1998 (Journal officiel du 12 octobre 2000)"]}],""],
+"Kenya":["KE","404",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 4 décembre 2007 (Journal officiel du 14 novembre 2010)"]}],""],
+"Kirghizistan":["KG","417",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 4 octobre 1985 (ex-URSS) (Journal officiel du 28 mai 1987)", "Échange de lettres du 14 mars 1967 (Journal officiel du 21 mars 1968)"]}],""],
+"Kosovo":["XK","383",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 mars 1974 (ex-Yougoslavie) (Journal officiel du 13 septembre 1975)", "Échange de lettres des 4 et 6 février 2013 (Journal officiel du 26 avril 2013)"]}],""],
+"Koweït":["KW","414",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 février 1982 (Journal officiel du 15 septembre 1983 et rectificatif du 1er décembre 1983)", "Échange de lettres des 17 août et 18 octobre 1988 (Journal officiel du 13 juillet 1989)", "Avenant du 27 septembre 1989 (Journal officiel du 26 septembre 1991)", "Avenant du 27 janvier 1994 (Journal officiel du 10 mars 1995)"]}],""],
+"Lettonie":["LV","428",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 14 avril 1997 (Journal officiel du 30 mai 2001)"]}],""],
+"Liban":["LB","422",["IR","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 24 juillet 1962 (Journal officiel du 8 janvier 1964 et rectificatif du 4 février 1964)"]}],""],
+"Libye":["LY","434",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 22 décembre 2005 (Journal officiel du 19 septembre 2008)"]}],""],
+"Lituanie":["LT","440",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 juillet 1997 (Journal officiel du 11 mai 2001)"]}],""],
+"Luxembourg":["LU","442",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 20 mars 2018 (Journal officiel du 4 décembre 2019)", "Avenant du 10 octobre 2019 (Journal officiel du 27 mars 2021)", "Avenant du 7 novembre 2022 (Journal officiel du 29 avril 2025)"]}],""],
+"Macédoine du Nord":["MK","807",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 10 février 1999 (Journal officiel du 3 juillet 2004)"]}],""],
+"Madagascar":["MG","450",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 22 juillet 1983 (Journal officiel du 11 décembre 1984 et rectificatif du 9 mars 1985)"]}],""],
+"Malaisie":["MY","458",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 24 avril 1975 (Journal officiel du 24 avril 1977)", "Avenant du 31 janvier 1991 (Journal officiel du 23 juin 1992)", "Avenant du 12 novembre 2009 (Journal officiel du 11 janvier 2011)"]}],""],
+"Malawi":["MW","454",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 14 décembre 1950 — ancienne convention franco-britannique (Journal officiel des 20 et 21 août 1951)", "Échange de lettres du 5 novembre 1963 (Journal officiel du 15 décembre 1963)", "Échange de lettres du 31 décembre 1963 (Journal officiel du 26 février 1964)"]}],""],
+"Mali":["ML","466",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 22 septembre 1972 (Journal officiel du 17 mai 1975)"]}],"Suspension du 5 mars 2024 au 31 décembre 2024, suivie de la dénonciation à compter du 1er janvier 2025."],
+"Malte":["MT","470",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 25 juillet 1977 (Journal officiel du 16 novembre 1979)", "Avenant et échange de lettres du 8 juillet 1994 (Journal officiel du 25 septembre 1997)", "Avenant du 29 août 2008 (Journal officiel du 4 juin 2010)"]}],""],
+"Maroc":["MA","504",["IR","SP","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 29 mai 1970 (Journal officiel du 24 décembre 1971)", "Échange de lettres des 5 et 14 décembre 1983", "Avenant du 18 août 1989 (Journal officiel du 22 décembre 1990 et rectificatif du 28 janvier 1991)"]}],""],
+"Mauritanie":["MR","478",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 15 novembre 1967 (Journal officiel du 27 avril 1969)", "Échange de lettres du 8 mars 1994"]}],""],
+"Mexique":["MX","484",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 novembre 1991 (Journal officiel du 6 mars 1993)"]}],""],
+"Moldavie":["MD","498",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 juin 2022 (Journal officiel du 29 mai 2024)"]}],""],
+"Monaco":["MC","492",["IR","S"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 18 mai 1963 (Journal officiel du 27 septembre 1963 et rectificatif du 20 décembre 1963)", "Échange de lettres du 9 décembre 1966 (Journal officiel du 24 février 1967)", "Échange de lettres du 9 décembre 1966 (Journal officiel du 21 mars 1968)", "Avenant du 25 juin 1969 (Journal officiel du 25 décembre 1969)", "Échange de lettres du 6 août 1971 (Journal officiel du 8 janvier 1972)", "Avenant et échange de lettres du 26 mai 2003 (Journal officiel du 1er septembre 2005)", "Échange de lettres du 26 février 2010 (Journal officiel du 7 juillet 2012)", "Accord particulier du 25 février 2019 (Journal officiel du 27 août 2021)"]}, {"m": "Successions", "a": ["Convention du 1er avril 1950 (Journal officiel du 10 juin 1953)"]}],"Convention n'ayant pas principalement pour objet d'éviter les doubles impositions."],
+"Mongolie":["MN","496",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 18 avril 1996 (Journal officiel du 1er janvier 1999)"]}],""],
+"Monténégro":["ME","499",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 mars 1974 (ex-Yougoslavie) (Journal officiel du 13 septembre 1975)", "Avenant du 26 mars 2003 (Journal officiel du 23 mai 2003)"]}],""],
+"Namibie":["NA","516",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 29 mai 1996 (Journal officiel du 29 mai 1999)"]}],""],
+"Niger":["NE","562",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 1er juin 1965 (Journal officiel du 1er décembre 1966 et rectificatif du 8 janvier 1967)", "Avenant du 16 février 1973 (Journal officiel du 13 mars 1977)"]}],"Suspension de la convention à compter du 5 juin 2024."],
+"Nigeria":["NG","566",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 27 février 1990 (Journal officiel du 19 juillet 1991)"]}],""],
+"Norvège":["NO","578",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 19 décembre 1980 (Journal officiel du 25 octobre 1981)", "Avenant du 14 novembre 1984 (Journal officiel du 27 octobre 1985)", "Avenant du 7 avril 1995 (Journal officiel du 17 octobre 1996)", "Avenant du 16 septembre 1999 (Journal officiel du 20 février 2003)"]}],""],
+"Nouvelle-Calédonie":["NC","540",["IR","S","D","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention des 31 mars et 5 mai 1983 (Journal officiel du 27 juillet 1983)"]}],""],
+"Nouvelle-Zélande":["NZ","554",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 30 novembre 1979 (Journal officiel du 16 mai 1981)"]}],""],
+"Oman":["OM","512",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 1er juin 1989 (Journal officiel du 1er août 1990)", "Avenant du 22 octobre 1996 (Journal officiel du 30 avril 2004)", "Avenant du 8 avril 2012 (Journal officiel du 20 mars 2013)"]}],""],
+"Ouzbékistan":["UZ","860",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 22 avril 1996 (Journal officiel du 16 octobre 2003 et rectificatif du 13 février 2004)"]}],""],
+"Pakistan":["PK","586",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 juin 1994 (Journal officiel du 18 octobre 1996)"]}],""],
+"Panama":["PA","591",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 30 juin 2011 (Journal officiel du 4 février 2012)"]}],""],
+"Pays-Bas":["NL","528",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 16 mars 1973 (Journal officiel du 21 avril 1974)", "Avenant du 7 avril 2004 (Journal officiel du 1er septembre 2005)"]}],""],
+"Philippines":["PH","608",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 9 janvier 1976 (Journal officiel du 4 octobre 1978)", "Avenant du 26 juin 1995 (Journal officiel du 26 juin 1998)", "Avenant du 25 novembre 2011 (Journal officiel du 10 février 2013)"]}],""],
+"Pologne":["PL","616",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 20 juin 1975 (Journal officiel du 1er décembre 1976)"]}],""],
+"Polynésie française":["PF","258",["IR"],[{"m": "Revenus de capitaux mobiliers", "a": ["Convention des 28 mars et 28 mai 1957 (Journal officiel du 15 août 1957)", "Accord particulier du 29 décembre 2009 (Journal officiel du 20 avril 2011)"]}],""],
+"Portugal":["PT","620",["IR","SP","DP"],[{"m": "Impôt sur le revenu", "a": ["Convention du 14 janvier 1971 (Journal officiel du 4 janvier 1973)", "Avenant du 25 août 2016 (Journal officiel du 6 janvier 2018)"]}, {"m": "Successions et donations — portée limitée", "a": ["Accord particulier du 3 juin 1994 et EDL des 29 et 30 juin 1994 (Journal officiel du 2 mars 1995)"]}],""],
+"Qatar":["QA","634",["IR","IF","S"],[{"m": "Impôt sur le revenu", "a": ["Convention des 4 décembre 1990 et EDL 12 janvier 1993 (Journal officiel du 22 décembre 1994)", "Avenant du 14 janvier 2008 (Journal officiel du 31 juillet 2009)"]}],""],
+"Québec":["CA","124",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Entente fiscale du 1er septembre 1987 (Journal officiel du 29 octobre 1988)", "Avenant du 3 septembre 2002 (Journal officiel du 1er septembre 2005)"]}],"",["Convention avec le Canada du 2 mai 1975","https://www.impots.gouv.fr/sites/default/files/media/10_conventions/canada/convention_avec_le_canada_modifiee_par_la_cml.pdf"]],
+"République centrafricaine":["CF","140",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention des 13 décembre 1969 et EDL 13 et 16 décembre 1969 (Journal officiel du 25 mai 1971)"]}],""],
+"République tchèque":["CZ","203",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 avril 2003 (Journal officiel du 3 août 2005)"]}],""],
+"Roumanie":["RO","642",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 27 septembre 1974 (Journal officiel du 21 octobre 1975)"]}],""],
+"Royaume-Uni":["GB","826",["IR","S"],[{"m": "Impôt sur le revenu", "a": ["Convention du 19 juin 2008 (Journal officiel du 9 janvier 2010)"]}, {"m": "Successions", "a": ["Convention du 21 juin 1963 (Journal officiel du 1er août 1964 et rectificatif du 10 septembre 1964)"]}],""],
+"Russie":["RU","643",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 26 novembre 1996 (Journal officiel du 29 mai 1999)"]}],"Suspension partielle de la convention à compter du 8 août 2023."],
+"Saint-Martin":["MF","663",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 21 décembre 2010 (Journal officiel du 20 avril 2011)", "Accord particulier du 23 décembre 2009 (Journal officiel du 20 avril 2011)"]}],""],
+"Saint-Pierre-et-Miquelon":["PM","666",["IR","S","D","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention du 30 mai 1988 (Journal officiel du 14 janvier 1989)"]}],""],
+"Sénégal":["SN","686",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention et échange de lettres du 29 mars 1974 (Journal officiel du 30 novembre 1976)", "Échange de lettres du 29 mars 1974 (Journal officiel du 11 mai 1978)", "Avenant du 16 juillet 1984 (Journal officiel du 25 février 1986)", "Avenant du 10 janvier 1991 (Journal officiel du 27 février 1993)"]}],""],
+"Serbie":["RS","688",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 mars 1974 (ex-Yougoslavie) (Journal officiel du 13 septembre 1975)", "Avenant du 26 mars 2003 (Journal officiel du 23 mai 2003)"]}],""],
+"Singapour":["SG","702",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 janvier 2015 (Journal officiel du 2 juillet 2016)"]}],""],
+"Slovaquie":["SK","703",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 1er juin 1973 — ex-Tchécoslovaquie (Journal officiel du 2 octobre 1975)"]}],""],
+"Slovénie":["SI","705",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 avril 2004 (Journal officiel du 22 mars 2007)"]}],""],
+"Sri Lanka":["LK","144",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 17 septembre 1981 (Journal officiel du 30 janvier 1983)"]}],""],
+"Suède":["SE","752",["IR","IF","S","D"],[{"m": "Impôt sur le revenu", "a": ["Convention des 27 novembre 1990 et EDL 14 et 18 mars 1991 (Journal officiel du 8 avril 1992 et rectificatif du 22 août 1992)"]}, {"m": "Successions et donations", "a": ["Convention du 8 juin 1994 (Journal officiel du 16 mars 1996)"]}],""],
+"Suisse":["CH","756",["IR","IF","SP","DP"],[{"m": "Impôt sur le revenu", "a": ["Convention du 9 septembre 1966 (Journal officiel du 10 octobre 1967)", "Avenant du 3 décembre 1969 (Journal officiel des 2 et 3 novembre 1970)", "Avenant du 22 juillet 1997 (Journal officiel du 27 août 1998)", "Échange de lettres des 14 février et 2 juin 2006", "Échange de lettres des 5 et 13 décembre 2006", "Avenant du 27 août 2009 (Journal officiel du 12 décembre 2010)", "Avenant du 25 juin 2014 (Journal officiel du 3 mai 2016)", "Arrangement administratif du 22 décembre 2022 (transitoire)", "Arrangement administratif du 30 juin 2023 (transitoire)", "Avenant du 27 juin 2023 (Journal officiel du 23 août 2025)"]}, {"m": "Travailleurs frontaliers", "a": ["Accord particulier du 11 avril 1983, complété par échange de lettres des 25 avril et 8 juin 1984, modifié par échanges de lettres des 2 et 5 septembre 1985 (Journal officiel du 25 février 1987)", "Échange de lettres des 21 et 24 février 2005", "Échange de lettres des 5 et 12 juillet 2007", "Arrangement administratif du 22 décembre 2022", "Arrangement administratif du 30 juin 2023"]}, {"m": "Libéralités faites dans des buts désintéressés — portée limitée", "a": ["Accord particulier du 30 octobre 1979 (Journal officiel du 26 février 1982 et 25 octobre 1994)"]}],"IL N'EXISTE PLUS DE CONVENTION SUCCESSORALE FRANCO-SUISSE. La convention du 31 décembre 1953 a été dénoncée par la France (note verbale du 17 juin 2014) et a cessé de s'appliquer aux successions ouvertes à compter du 1er janvier 2015 : le droit interne s'applique désormais sans restriction (art. 750 ter et 784 A du CGI). L'accord du 30 octobre 1979 subsiste mais ne porte que sur les libéralités faites dans des buts désintéressés."],
+"Syrie":["SY","760",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention des 17 juillet 1998 et EDL 16 décembre 2004 (Journal officiel du 3 juillet 2009)"]}],""],
+"Thaïlande":["TH","764",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 27 décembre 1974 (Journal officiel du 21 novembre 1975)", "Échange de lettres des 20 août 1999 et 6 mars 2000 (Journal officiel du 15 avril 2003)"]}],""],
+"Togo":["TG","768",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention des 24 novembre 1971 et EDL 25 et 26 novembre 1971 (Journal officiel du 6 août 1975)"]}],""],
+"Trinité-et-Tobago":["TT","780",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 5 août 1987 (Journal officiel du 18 avril 1989)"]}],""],
+"Tunisie":["TN","788",["IR","S","DE"],[{"m": "Impôt sur le revenu", "a": ["Convention du 28 mai 1973 (Journal officiel du 13 novembre 1975)", "Échange de lettres des 29 mai et 24 juin 1985"]}],""],
+"Turkménistan":["TM","795",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 4 octobre 1985 (ex-URSS) (Journal officiel du 28 mai 1987)", "Échange de lettres du 14 mars 1967 (Journal officiel du 21 mars 1968)"]}],""],
+"Turquie":["TR","792",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 18 février 1987 (Journal officiel du 6 juillet 1989)"]}],""],
+"Ukraine":["UA","804",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 31 janvier 1997 (Journal officiel du 9 décembre 1999)"]}],""],
+"Venezuela":["VE","862",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 7 mai 1992 (Journal officiel du 12 janvier 1994)"]}],""],
+"Vietnam":["VN","704",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 10 février 1993 (Journal officiel du 20 décembre 1994)"]}],""],
+"Zambie":["ZM","894",["IR"],[{"m": "Impôt sur le revenu", "a": ["Convention du 14 décembre 1950 — ancienne convention franco-britannique (Journal officiel des 20 et 21 août 1951)", "Échange de lettres du 5 novembre 1963 (Journal officiel du 15 décembre 1963)", "Échange de lettres du 31 décembre 1963 (Journal officiel du 26 février 1964)"]}],""],
+"Zimbabwe":["ZW","716",["IR","IF"],[{"m": "Impôt sur le revenu", "a": ["Convention du 15 décembre 1993 (Journal officiel du 16 mars 1997)"]}],""],
+"Taïwan":["TW","158",["IR"],[{"m": "Impôt sur le revenu", "a": ["Article 77 de la loi n° 2010-1658 du 29 décembre 2010 de finances rectificative pour 2010 — dispositif de droit interne, en l'absence de convention"]}],""],
+"Saint-Barthélemy":["BL","652",[],[{"m": "Assistance administrative", "a": ["Accord particulier du 14 septembre 2010 (Journal officiel du 20 avril 2011)"]}],""],
+"Mayotte":["YT","175",[],[{"m": "Impôt sur le revenu", "a": ["Convention conclue avec l'ancien territoire des Comores"]}],"Convention éteinte depuis le 1er janvier 2014."],
+"Tadjikistan":["TJ","762",[],[{"m": "Impôt sur le revenu", "a": ["Convention du 4 octobre 1985 (ex-URSS)"]}],"Convention éteinte depuis le 1er janvier 2015."]
+};
+
+const esc=s=>String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const escAttr=s=>esc(s).replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+const EMOJI_OK=(()=>{
+  try{
+    const c=document.createElement("canvas");c.width=32;c.height=24;
+    const x=c.getContext("2d");x.font="18px sans-serif";
+    const a=x.measureText(String.fromCodePoint(0x1F1EB,0x1F1F7)).width;
+    const b=x.measureText("FR").width;
+    return a < b*1.4;   // un vrai drapeau est plus étroit que deux lettres
+  }catch(e){return false}
+})();
+const flag=i=>{
+  if(!i) return '<span class="iso">\u00B7</span>';
+  if(EMOJI_OK){
+    try{return String.fromCodePoint(...[...i].map(c=>0x1F1E6+c.charCodeAt(0)-65))}catch(e){}
+  }
+  return '<span class="iso">'+i+'</span>';
+};
+const NOMIMP={IR:"Revenu",IF:"Fortune",S:"Successions",SP:"Successions (portée limitée)",D:"Donations",DP:"Donations (portée limitée)",DE:"Droits d'enregistrement"};
+const ABRIMP={IR:"IR",IF:"IF",S:"S",SP:"S limitée",D:"D",DP:"D limitée",DE:"DE"};
+const PORTEE_LIMITEE={
+  Canada:"La convention n’organise pas une répartition générale des biens successoraux ou donnés. Seuls ses articles 4, 23, 25 et 26 sont étendus aux droits de mutation à titre gratuit français.",
+  Maroc:"Il n’existe pas de régime successoral général. L’article 26, paragraphe 3, exonère seulement en France les valeurs mobilières marocaines dépendant de la succession d’une personne de nationalité française domiciliée au Maroc.",
+  Portugal:"L’accord du 3 juin 1994 ne répartit pas le droit d’imposer les successions et donations. Il étend seulement, sous conditions de réciprocité, certaines exonérations aux États, collectivités locales et organismes publics exerçant des activités déterminées.",
+  Suisse:"Aucune convention successorale ne s’applique aux décès survenus depuis le 1er janvier 2015. L’accord du 30 octobre 1979 subsiste uniquement pour certaines libéralités faites dans des buts désintéressés."
+};
+const OECD_RESOURCES={
+  models:[
+    {year:"1963",label:"Projet de convention de double imposition — texte et Commentaires",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/1963/10/draft-double-taxation-convention-on-income-and-capital-1963_g1g96efe/9789264307537-fr.pdf"},
+    {year:"1977",label:"Modèle de convention et Commentaires",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/1977/09/model-double-taxation-convention-on-income-and-capital-1977_g1g96efb/5d03cf81-fr.pdf"},
+    {year:"1992",label:"Modèle de convention — version abrégée",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/1992/10/model-tax-convention-on-income-and-on-capital-condensed-version-september-1992_g1g96efa/mtc_cond-1992-fr.pdf"},
+    {year:"1998",label:"Modèle de convention — version abrégée",format:"PDF",note:"Intègre notamment les mises à jour de 1994, 1995 et 1997.",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/1998/06/model-tax-convention-on-income-and-on-capital-condensed-version-1998_g1ghgc67/mtc_cond-1998-fr.pdf"},
+    {year:"2000",label:"Modèle de convention — version abrégée",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2000/08/model-tax-convention-on-income-and-on-capital-condensed-version-2000_g1ghgca8/mtc_cond-2000-fr.pdf"},
+    {year:"2003",label:"Modèle de convention — version abrégée",format:"PDF",note:"Correspond à la mise à jour dite de 2002, adoptée en janvier 2003.",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2003/01/model-tax-convention-on-income-and-on-capital-condensed-version-2003_g1gh2d76/mtc_cond-2003-fr.pdf"},
+    {year:"2005",label:"Modèle de convention — version abrégée",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2005/09/model-tax-convention-on-income-and-on-capital-condensed-version-2005_g1gh5bb0/mtc_cond-2005-fr.pdf"},
+    {year:"2008",label:"Modèle de convention — version abrégée",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2008/08/model-tax-convention-on-income-and-on-capital-condensed-version-2008_g1gh95da/mtc_cond-2008-fr.pdf"},
+    {year:"2010",label:"Modèle de convention — version abrégée",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2010/08/model-tax-convention-on-income-and-on-capital-condensed-version-2010_g1g10b68/mtc_cond-2010-fr.pdf"},
+    {year:"2010",label:"Modèle de convention — version complète",format:"Page OCDE",note:"Contient les notes historiques remontant à 1963 et les rapports antérieurs.",url:"https://www.oecd.org/fr/publications/modele-de-convention-fiscale-concernant-le-revenu-et-la-fortune-2010_9789264175273-fr.html"},
+    {year:"2014",label:"Modèle de convention — version abrégée",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2014/08/model-tax-convention-on-income-and-on-capital-condensed-version-2014_g1g46e32/mtc_cond-2014-fr.pdf"},
+    {year:"2014",label:"Modèle de convention — version complète",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2015/10/model-tax-convention-on-income-and-on-capital-2014-full-version_g1g57dda/9789264239142-fr.pdf"},
+    {year:"2017",label:"Modèle de convention — version abrégée",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2017/12/model-tax-convention-on-income-and-on-capital-condensed-version-2017_g1g8769b/mtc_cond-2017-fr.pdf"},
+    {year:"2017",label:"Modèle de convention — version complète",format:"PDF",note:"Dernière version complète consolidée actuellement disponible en français.",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2019/04/model-tax-convention-on-income-and-on-capital-2017-full-version_g1g972ee/0faf9b6c-fr.pdf"},
+    {year:"2024",label:"Mise à jour des Commentaires relatifs à l’article 26",format:"PDF",url:"https://www.oecd.org/fr/fiscalite/echange-de-renseignements-fiscaux/mise-a-jour-commentaires-relatifs-article-26-modele-convention-fiscale-ocde.pdf"},
+    {year:"2025",label:"Mise à jour générale du Modèle et des Commentaires",format:"PDF",url:"https://www.oecd.org/content/dam/oecd/fr/publications/reports/2025/11/the-2025-update-to-the-oecd-model-tax-convention_c7031e1b/472b60f7-fr.pdf"}
+  ],
+  committee:[
+    {year:"1987",label:"L’évasion et la fraude fiscales internationales",url:"https://www.oecd.org/fr/publications/l-evasion-et-la-fraude-fiscales-internationales_e5d87800-fr.html"},
+    {year:"1987",label:"La sous-capitalisation ; l’imposition des artistes et sportifs",url:"https://www.oecd.org/fr/publications/la-sous-capitalisation-l-imposition-des-artistes-du-spectacle-et-des-sportifs_0ebfdbe4-fr.html"},
+    {year:"1988",label:"Conséquences fiscales des gains et pertes de change",url:"https://www.oecd.org/fr/publications/consequences-fiscales-des-gains-et-pertes-de-change_g2ghgbfd-fr.html"},
+    {year:"1992",label:"Modèle de convention fiscale — quatre études complémentaires",url:"https://www.oecd.org/fr/publications/modele-de-convention-fiscale-quatre-etudes-complementaires_g2ghgc11-fr.html"},
+    {year:"1994",label:"Attribution de revenus aux établissements stables",url:"https://www.oecd.org/fr/publications/modele-de-convention-fiscale-attribution-de-revenus-aux-etablissements-stables_g2ghgc22-fr.html"},
+    {year:"1999",label:"Application du Modèle aux sociétés de personnes",url:"https://www.oecd.org/fr/publications/l-application-du-modele-de-convention-fiscale-de-l-ocde-aux-societes-de-personnes_9789264273313-fr.html"},
+    {year:"2000",label:"Problèmes posés par l’article 14 du Modèle",url:"https://www.oecd.org/fr/publications/n-07-problemes-poses-par-l-article-14-du-modele-de-convention-fiscale-de-l-ocde_9789264281233-fr.html"},
+    {year:"2003",label:"Rapports de 2002 relatifs au Modèle",note:"Limitation des avantages, commerce électronique et établissement stable.",url:"https://www.oecd.org/fr/publications/n-08-rapports-de-2002-relatifs-au-modele-de-convention-fiscale-de-l-ocde_9789264100008-fr.html"},
+    {year:"2006",label:"Taxation des options d’achat d’actions destinées aux salariés",url:"https://www.oecd.org/fr/publications/la-taxation-des-options-de-souscription-ou-d-achat-d-actions-destinees-aux-salaries_9789264036116-fr.html"},
+    {year:"2008",label:"Rapport sur l’attribution de bénéfices aux établissements stables",url:"https://www.oecd.org/fr/publications/rapport-sur-l-attribution-de-benefices-aux-etablissements-stables_4c3ee45b-fr.html"},
+    {year:"2010",label:"Rapport de 2010 sur l’attribution de bénéfices aux établissements stables",url:"https://www.oecd.org/fr/publications/rapport-de-2010-sur-l-attribution-de-benefices-aux-etablissements-stables_7b62691c-fr.html"}
+  ],
+  beps:[
+    {year:"Action 2",label:"Neutraliser les effets des dispositifs hybrides — rapport final 2015",url:"https://www.oecd.org/fr/publications/neutraliser-les-effets-des-dispositifs-hybrides-action-2-rapport-final-2015_9789264255104-fr.html"},
+    {year:"Action 6",label:"Empêcher l’utilisation abusive des conventions fiscales",url:"https://www.oecd.org/fr/publications/empecher-l-utilisation-abusive-des-conventions-fiscales-lorsque-les-circonstances-ne-s-y-pretent-pas_9789264225329-fr.html"},
+    {year:"Action 7",label:"Empêcher l’évitement artificiel du statut d’établissement stable — rapport final 2015",url:"https://www.oecd.org/fr/publications/empecher-les-mesures-visant-a-eviter-artificiellement-le-statut-d-etablissement-stable-action-7-rapport-final-2015_9789264255227-fr.html"}
+  ],
+  general:[
+    {label:"Page OCDE consacrée au Modèle de Convention fiscale",url:"https://www.oecd.org/fr/themes/modele-de-convention-fiscale-concernant-le-revenu-et-la-fortune-de-l-ocde.html"},
+    {label:"Collection « Questions de fiscalité internationale »",url:"https://www.oecd.org/fr/publications/questions-de-fiscalite-internationale_19900376.html"},
+    {label:"Consultations publiques fiscales de l’OCDE",url:"https://www.oecd.org/fr/about/projects/oecd-tax-public-consultations.html"}
+  ]
+};
+
+const OFFICIAL_RESOURCES={
+  "Albanie":[{kind:"Texte bilatéral",label:"Convention et protocole du 24 décembre 2002 — texte authentique",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/albanie/nid_5957_albanie.pdf"}],
+  "Bosnie-Herzégovine":[{kind:"Texte bilatéral",label:"Convention franco-yougoslave du 28 mars 1974 — texte authentique",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ex_yougoslavie/convention-avec-l-ex-yougoslavie_fd_1730.pdf"}],
+  "Chine":[{kind:"Historique",label:"Accord franco-chinois du 30 mai 1984 — texte abrogé",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/chine/chine_accord-avec-la-chine-du-30.05.1984-abroge_fd_1741.pdf"}],
+  "Côte d'Ivoire":[{kind:"Texte bilatéral",label:"Convention franco-ivoirienne — texte bilatéral authentique",url:"https://www.impots.gouv.fr/10conventionscotedivoirecote-d-ivoireconvention-avec-la-cote-d-ivoirefd1853pdf"}],
+  "Estonie":[{kind:"Publication",label:"Décret publiant la convention du 28 octobre 1997",url:"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000768799"}],
+  "Japon":[
+    {kind:"Historique",label:"Convention du 27 novembre 1964 — Recueil des traités des Nations unies",url:"https://treaties.un.org/doc/Publication/UNTS/Volume%20569/v569.pdf"},
+    {kind:"Historique",label:"Avenant du 10 mars 1981 — dossier officiel du Sénat",url:"https://www.senat.fr/leg/1980-1981/i1980_1981_0298.pdf"},
+    {kind:"Texte bilatéral",label:"Convention de 1995 modifiée par l'avenant de 2007 — version antérieure à la CML",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/japon/japon_convention-avec-le-japon-modifiee-par-l-avenant-entre-en-vigueur-le-01.12.2007_fd_1917.pdf"}
+  ],
+  "Jordanie":[{kind:"Texte bilatéral",label:"Convention et protocole du 28 mai 1984 — texte authentique",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/jordanie/jordanie_convention-avec-la-jordanie_fd_1911.pdf"}],
+  "Kenya":[{kind:"Texte bilatéral",label:"Convention du 4 décembre 2007 — texte authentique",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/kenya/kenya_convention-avec-le-kenya-signee-le-04.12.2007-en-vigueur-au-01.11.2010_fd_6194.pdf"}],
+  "Lettonie":[{kind:"Publication",label:"Décret publiant la convention du 14 avril 1997",url:"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000589224"}],
+  "Lituanie":[{kind:"Publication",label:"Décret publiant la convention du 7 juillet 1997",url:"https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000390615"}],
+  "Luxembourg":[{kind:"Historique",label:"Convention du 1er avril 1958 consolidée des avenants — texte remplacé",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/luxembourg/luxembourg_2017_04_28.pdf"}],
+  "Monaco":[{kind:"Texte bilatéral",label:"Convention du 18 mai 1963 et modifications — texte authentique",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/monaco/monaco_convention-avec-monaco_fd_1967.pdf"}],
+  "Mongolie":[{kind:"Texte bilatéral",label:"Convention du 18 avril 1996 — texte authentique",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/mongolie/mongolie_convention-avec-la-mongolie_fd_2101.pdf"}],
+  "Russie":[
+    {kind:"Historique",label:"Convention franco-soviétique du 4 octobre 1985 — branche antérieure",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/ex_urss/fichedescriptive_62371.pdf"},
+    {kind:"Texte bilatéral",label:"Convention franco-russe du 26 novembre 1996 — texte authentique",url:"https://www.impots.gouv.fr/10conventionsrussierussieconvention-avec-la-federation-de-russiefd1433pdf"}
+  ],
+  "Sénégal":[{kind:"Texte bilatéral",label:"Convention franco-sénégalaise — texte bilatéral authentique",url:"https://www.impots.gouv.fr/10conventionssenegalsenegalconvention-avec-le-senegalfd2186pdf"}],
+  "Singapour":[{kind:"Historique",label:"Convention du 9 septembre 1974 consolidée avec l'avenant de 2009 — texte remplacé",url:"https://www.impots.gouv.fr/10conventionssingapoursingapourconvention-avec-singapour-version-consolideefd1973pdf"}],
+  "Taïwan":[{kind:"Doctrine",label:"Commentaires administratifs officiels du dispositif fiscal applicable à Taïwan",url:"https://bofip.impots.gouv.fr/export/pdf/2155"}]
+};
+
+const FUTURE_TEXTS=[
+  {juridiction:"Inde",instrument:"Avenant signé le 18 février 2026",instruction:"Non entré en vigueur — maintenir le texte actuellement applicable.",url:"https://www.impots.gouv.fr/avenant-la-convention-avec-linde-signe-le-18022026-non-entre-en-vigueur"},
+  {juridiction:"Belgique",instrument:"Convention signée le 9 novembre 2021",instruction:"Non entrée en vigueur — maintenir la convention de 1964 modifiée.",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/belgique/dbv_met_frankrijk_fr-versie_-_alternat_vf2-pour_publication.pdf"},
+  {juridiction:"Argentine",instrument:"Avenant signé le 6 décembre 2019",instruction:"Non entré en vigueur — ne pas l’appliquer avant sa prise d’effet.",url:"https://www.impots.gouv.fr/sites/default/files/media/10_conventions/argentine/avenant_convention_argentine.pdf"},
+  {juridiction:"Finlande",instrument:"Convention signée le 4 avril 2023",instruction:"Non entrée en vigueur — maintenir la convention de 1970.",url:"https://www.impots.gouv.fr/convention-avec-la-finlande-signee-le-04042023-non-entree-en-vigueur"},
+  {juridiction:"Suède",instrument:"Avenant signé le 22 mai 2023",instruction:"Non entré en vigueur — maintenir le texte actuellement applicable.",url:"https://www.impots.gouv.fr/avenant-la-convention-avec-la-suede-signe-le-22052023-non-entre-en-vigueur"},
+  {juridiction:"Rwanda",instrument:"Convention signée le 22 juin 2023",instruction:"Non entrée en vigueur — aucune convention fiscale générale n’est actuellement applicable.",url:"https://www.impots.gouv.fr/convention-avec-le-rwanda-signee-le-22062023-non-entree-en-vigueur"},
+  {juridiction:"Chypre",instrument:"Convention signée le 11 décembre 2023",instruction:"Non entrée en vigueur — maintenir la convention de 1981 telle que modifiée par la CML.",url:"https://www.impots.gouv.fr/convention-avec-chypre-signee-le-11122023-non-entree-en-vigueur"}
+];
+const FUTURE_BY_COUNTRY=Object.fromEntries(FUTURE_TEXTS.map(x=>[x.juridiction,x]));
+const STATUS_DETAILS={
+  "Biélorussie":{type:"partial",label:"partiellement suspendue",mapClass:"partial",blocksAll:false,detail:"Les articles 7, 8 et 11 sont suspendus du 1er juin 2024 au 31 décembre 2026. Les autres stipulations continuent de produire leurs effets.",source:"https://bofip.impots.gouv.fr/bofip/3111-PGP.html/identifiant%3DBOI-INT-CVB-BLR-20250618"},
+  "Russie":{type:"partial",label:"partiellement suspendue",mapClass:"partial",blocksAll:false,detail:"Les articles 5 à 22 et 24 ainsi que les points 2 à 9 du protocole sont suspendus depuis le 8 août 2023. La convention demeure formellement en vigueur pour ses autres stipulations.",source:"https://bofip.impots.gouv.fr/bofip/2454-PGP.html/identifiant%3DBOI-INT-CVB-RUS-20241023"},
+  "Burkina Faso":{type:"susp",label:"dénoncée",mapClass:"susp",blocksAll:true,detail:"La convention a été suspendue du 8 novembre 2023 au 31 décembre 2024, puis dénoncée à compter du 1er janvier 2025. Elle est conservée ici à titre documentaire et historique.",source:"https://bofip.impots.gouv.fr/bofip/3112-PGP.html/identifiant%3DBOI-INT-CVB-BFA-20240807"},
+  "Mali":{type:"susp",label:"dénoncée",mapClass:"susp",blocksAll:true,detail:"La convention a cessé de produire ses effets le 5 mars 2024 et est dénoncée à compter du 1er janvier 2025. Elle est conservée ici à titre documentaire et historique.",source:"https://bofip.impots.gouv.fr/bofip/2600-PGP.html/identifiant%3DBOI-INT-CVB-MLI-20240904"},
+  "Niger":{type:"susp",label:"suspendue",mapClass:"susp",blocksAll:true,detail:"La convention est suspendue depuis le 5 juin 2024. Elle ne doit pas être appliquée tant que cette suspension demeure en vigueur.",source:"https://bofip.impots.gouv.fr/bofip/1712-PGP.html/identifiant%3DBOI-INT-CVB-NER-20240904"},
+  "Taïwan":{type:"special",label:"dispositif législatif",mapClass:"has",blocksAll:false,detail:"Les règles applicables résultent de l’article 77 de la loi de finances rectificative pour 2010. Elles sont réciproques et fonctionnellement comparables à une convention, sans constituer un traité international."},
+  "Saint-Barthélemy":{type:"limited",label:"accord limité",mapClass:"limited",blocksAll:false,detail:"L’accord du 14 septembre 2010 porte sur l’assistance administrative mutuelle en matière fiscale. Il n’existe pas de convention fiscale générale répartissant le droit d’imposer."}
+};
+function mk(nom,v){
+  const M=META[nom]||["","",[],[],""];
+  const status=STATUS_DETAILS[nom]||{type:"inforce",label:"",mapClass:"has",blocksAll:false,detail:""};
+  const ir=(v&&v.ir)||"";
+  return{nom,iso:M[0],isoN:String(parseInt(M[1]||"0",10)),impots:M[2]||[],instr:M[3]||[],mention:M[4]||"", renvoi:M[5]||null,
+    ir, succ:(v&&v.succ)||"", lib:(v&&v.lib)||"", proto:!!(v&&v.protocole&&v.protocole.trim()),
+    status,future:FUTURE_BY_COUNTRY[nom]||null,resources:OFFICIAL_RESOURCES[nom]||[],
+    cmlInfo:/modifiee-par-la-cml|modifiee_par_la_cml|modifiee-par-la-convention-multilaterale|modifiee_par_la_convention_multilaterale|convention-multilaterale|convention_multilaterale|_cml\.|_cml_/i.test(ir),
+    compl:(M[3]||[]).reduce((n,g)=>n+g.a.filter(x=>/^(Échange de lettres|Accord particulier|Arrangement administratif)/.test(x)).length,0),
+    hay:(nom+" "+(M[3]||[]).map(g=>g.a.join(" ")).join(" ")+" "+(M[4]||"")+" "+(status.label||"")).toLowerCase()};
+}
+const DATA=[...Object.entries(CONVENTIONS),...Object.entries(CONVENTIONS_COMMUNES)]
+  .map(([n,v])=>mk(n,v)).sort((a,b)=>a.nom.localeCompare(b.nom,"fr"));
+const BYISO={};DATA.forEach(d=>{if(d.isoN&&d.isoN!=="0"&&!BYISO[d.isoN])BYISO[d.isoN]=d});
+const actifs=new Set();
+let recherchePays="";
+const normaliserRecherche=valeur=>String(valeur||"").normalize("NFD").replace(/\p{Diacritic}/gu,"").toLowerCase().trim();
+const SAHARA_OCCIDENTAL={impots:["IR","SP","DE"]};
+function garde(d){
+  for(const f of actifs) if(!d.impots.includes(f)) return false;
+  return true;
+}
+function gardeListe(d){
+  return garde(d)&&(!recherchePays||normaliserRecherche(d.nom).includes(recherchePays));
+}
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll("nav button").forEach(x=>x.setAttribute("aria-selected",x===b));
+  document.querySelectorAll(".pane").forEach(p=>p.classList.remove("on"));
+  document.getElementById("p-"+b.dataset.p).classList.add("on");
+  const estCarte=b.dataset.p==="carte";
+  document.body.classList.toggle("map-mode",estCarte);
+  fermerSuggestions();
+  if(estCarte) carte();
+  rendre();
+});
+document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{
+  const f=b.dataset.f;
+  const incompatible={S:"SP",SP:"S",D:"DP",DP:"D"}[f];
+  if(!actifs.has(f)&&incompatible){
+    actifs.delete(incompatible);
+    const autre=document.querySelector('.chip[data-f="'+incompatible+'"]');
+    if(autre) autre.setAttribute("aria-pressed","false");
+  }
+  actifs.has(f)?actifs.delete(f):actifs.add(f);
+  b.setAttribute("aria-pressed",actifs.has(f));rendre();
+});
+const countrySearch=document.getElementById("countrySearch");
+const countrySuggestions=document.getElementById("countrySuggestions");
+let suggestionIndex=-1;
+function fermerSuggestions(){
+  countrySuggestions.hidden=true;
+  countrySearch.setAttribute("aria-expanded","false");
+  suggestionIndex=-1;
+}
+function suggestionsVisibles(){return [...countrySuggestions.querySelectorAll(".country-suggestion")]}
+function activerSuggestion(index){
+  const items=suggestionsVisibles();
+  if(!items.length)return;
+  suggestionIndex=(index+items.length)%items.length;
+  items.forEach((item,i)=>item.classList.toggle("is-active",i===suggestionIndex));
+  items[suggestionIndex].scrollIntoView({block:"nearest"});
+}
+function afficherSuggestions(){
+  const q=normaliserRecherche(countrySearch.value);
+  if(!q){fermerSuggestions();return}
+  const choix=DATA.filter(d=>garde(d)&&normaliserRecherche(d.nom).includes(q)).slice(0,10);
+  countrySuggestions.innerHTML=choix.length?choix.map(d=>'<button class="country-suggestion" type="button" role="option" data-n="'+escAttr(d.nom)+'"><span class="fl">'+(d.iso?flag(d.iso):"·")+'</span><span>'+esc(d.nom)+'</span><span class="suggestion-meta">'+esc(d.impots.map(i=>ABRIMP[i]||i).join(" · ")||"—")+'</span></button>').join(""):'<p class="country-suggestion-empty">Aucun pays correspondant.</p>';
+  countrySuggestions.hidden=false;
+  countrySearch.setAttribute("aria-expanded","true");
+  suggestionIndex=-1;
+  countrySuggestions.querySelectorAll(".country-suggestion").forEach(b=>b.addEventListener("click",()=>{
+    countrySearch.value=b.dataset.n;
+    recherchePays=normaliserRecherche(b.dataset.n);
+    fermerSuggestions();
+    rendre();
+    ouvrir(b.dataset.n);
+  }));
+}
+countrySearch.addEventListener("input",e=>{recherchePays=normaliserRecherche(e.target.value);rendre();afficherSuggestions()});
+countrySearch.addEventListener("focus",afficherSuggestions);
+countrySearch.addEventListener("keydown",e=>{
+  const items=suggestionsVisibles();
+  if(e.key==="ArrowDown"&&items.length){e.preventDefault();activerSuggestion(suggestionIndex+1)}
+  else if(e.key==="ArrowUp"&&items.length){e.preventDefault();activerSuggestion(suggestionIndex-1)}
+  else if(e.key==="Enter"&&suggestionIndex>=0&&items[suggestionIndex]){e.preventDefault();items[suggestionIndex].click()}
+  else if(e.key==="Escape"){
+    if(!countrySuggestions.hidden){fermerSuggestions()}
+    else if(countrySearch.value){countrySearch.value="";recherchePays="";rendre()}
+  }
+});
+document.addEventListener("pointerdown",e=>{if(!e.target.closest(".country-search-box"))fermerSuggestions()});
+function rendre(){
+  const vue=DATA.filter(gardeListe);
+  const totalAffiche=document.body.classList.contains("map-mode")?DATA.filter(garde).length:vue.length;
+  document.getElementById("n").textContent=totalAffiche+(totalAffiche>1?" relations":" relation");
+  let h="",L="";
+  vue.forEach(d=>{const i=d.nom[0].toUpperCase();
+    if(i!==L){if(L)h+='</section>';L=i;h+='<section class="letter-group"><div class="alpha">'+esc(i)+'</div>';}
+    const st=d.status&&d.status.label?'<span class="warn '+escAttr(d.status.type)+'">'+esc(d.status.label)+'</span>':'';
+    const ft=d.future?'<span class="future-mark" title="Texte signé mais non entré en vigueur">futur</span>':'';
+    h+='<button class="row" data-n="'+escAttr(d.nom)+'"><span class="fl">'+(d.iso?flag(d.iso):"\u00B7")+'</span>'+
+       '<span class="nm">'+esc(d.nom)+'</span>'+st+ft+
+       (d.compl||d.proto?'<span class="cplmark" title="Actes complémentaires ou protocole annexé">*</span>':'')+'<span class="imp" title="'+escAttr(d.impots.map(i=>NOMIMP[i]||i).join(", "))+'">'+esc(d.impots.map(i=>ABRIMP[i]||i).join(" \u00B7 ")||"\u2014")+'</span></button>';});
+  if(L)h+='</section>';
+  const el=document.getElementById("countryResults");
+  el.innerHTML=h?'<div class="country-columns">'+h+'</div>':'<p style="color:var(--ink-2);font-size:14px;padding:20px 4px">Aucun résultat.</p>';
+  el.querySelectorAll(".row").forEach(b=>b.onclick=()=>ouvrir(b.dataset.n));
+  if(window.__paint) window.__paint();
+}
+let fait=false;
+function carte(){
+  if(fait)return;fait=true;
+  const msg=document.getElementById("mapmsg");
+  const S=u=>new Promise((ok,ko)=>{const s=document.createElement("script");s.src=u;s.onload=ok;s.onerror=ko;document.head.appendChild(s)});
+  Promise.all([S("https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"),S("https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js")])
+   .then(()=>fetch("https://cdn.jsdelivr.net/npm/visionscarto-world-atlas@1/world/110m.json")).then(r=>{if(!r.ok)throw new Error("Fond de carte indisponible");return r.json()}).then(topo=>{
+      msg.remove();
+      const geo=topojson.feature(topo,topo.objects.countries),W=980,H=520;
+      const proj=d3.geoNaturalEarth1().fitExtent([[6,6],[W-6,H-6]],geo),path=d3.geoPath(proj);
+      const svg=d3.select("#mapbox").insert("svg",".tip").attr("viewBox","0 0 "+W+" "+H)
+        .attr("role","img").attr("aria-label","Planisphère des conventions fiscales conclues par la France");
+      const tip=document.getElementById("tip");
+      const sel=svg.selectAll("path").data(geo.features).join("path").attr("d",path)
+        .on("mousemove",function(e,f){
+          const id=String(parseInt(f.id,10));
+          const b0=document.getElementById("mapbox").getBoundingClientRect();
+          if(id==="732"){
+            if(!garde(SAHARA_OCCIDENTAL)){tip.style.opacity=0;return}
+            tip.textContent="Sahara occidental — portée territoriale de la convention à vérifier";
+            tip.style.left=(e.clientX-b0.left+13)+"px";tip.style.top=(e.clientY-b0.top-9)+"px";tip.style.opacity=1;return
+          }
+          const d=BYISO[id];
+          if(!d||!garde(d)){tip.style.opacity=0;return}
+          const b=document.getElementById("mapbox").getBoundingClientRect();
+          tip.textContent=d.nom+(d.impots.length?" \u2014 "+d.impots.join(" \u00B7 "):"");
+          tip.style.left=(e.clientX-b.left+13)+"px";tip.style.top=(e.clientY-b.top-9)+"px";tip.style.opacity=1;})
+        .on("mouseleave",()=>tip.style.opacity=0)
+        .on("click",(e,f)=>{const id=String(parseInt(f.id,10));if(id==="732"){if(garde(SAHARA_OCCIDENTAL))ouvrirSaharaOccidental();return}const d=BYISO[id];if(d&&garde(d))ouvrir(d.nom)});
+      window.__paint=()=>sel.attr("class",f=>{
+        const id=String(parseInt(f.id,10));
+        if(id==="732") return garde(SAHARA_OCCIDENTAL)?"cty esh":"cty off";
+        const d=BYISO[id];
+        if(!d)return"cty";if(!garde(d))return"cty off";return"cty "+((d.status&&d.status.mapClass)||"has")});
+      window.__paint();
+   }).catch(()=>{msg.innerHTML="Le fond de carte n'a pas pu être chargé \u2014 il provient d'un service externe, "+
+      "parfois bloqué par les réseaux d'entreprise.<br>L'onglet « Par pays » fonctionne hors connexion.";});
+}
+let cur=null;
+function ouvrirSaharaOccidental(){
+  const h='<div class="fh"><h2>Sahara occidental</h2><button class="x" type="button" data-close-dialog aria-label="Fermer">✕</button></div><div class="fb">'+
+    '<div class="nota"><div class="nota-t">Portée territoriale à vérifier</div><p>Le Sahara occidental est représenté séparément sur la carte afin de signaler une difficulté relative au champ territorial de la convention fiscale franco-marocaine.</p></div>'+
+    '<p>La convention définit le Maroc comme « le territoire du Royaume du Maroc » sans mentionner expressément le Sahara occidental. Le statut international du territoire demeure contesté et aucun commentaire fiscal français publié recensé dans cet annuaire ne précise expressément si la convention s’y applique.</p>'+
+    '<p>Cette représentation cartographique et cette note ne prennent aucune position sur la souveraineté du territoire. L’application éventuelle de la convention doit être vérifiée au cas par cas, au regard notamment du territoire concerné, de la date des faits et des positions des autorités compétentes.</p>'+
+    '<div class="lk"><a class="src" href="'+escAttr(CONVENTIONS["Maroc"].ir)+'" target="_blank" rel="noopener noreferrer">Texte officiel de la convention franco-marocaine ↗</a></div></div>';
+  document.getElementById("dlgc").innerHTML=h;
+  document.querySelector("[data-close-dialog]").addEventListener("click",()=>document.getElementById("dlg").close());
+  document.getElementById("dlg").showModal();
+}
+function ouvrir(nom){
+  const d=DATA.find(x=>x.nom===nom);if(!d)return;cur=d;
+  let h='<div class="fh"><span class="fl">'+(d.iso?flag(d.iso):"")+'</span><h2>'+esc(d.nom)+'</h2>'+
+        '<button class="x" type="button" data-close-dialog aria-label="Fermer">\u2715</button></div><div class="fb">';
+  if(d.status&&d.status.detail){
+    h+='<div class="flag '+escAttr(d.status.type)+'"><strong>'+esc(d.status.label.charAt(0).toUpperCase()+d.status.label.slice(1))+'</strong><br>'+esc(d.status.detail)+
+      (d.status.source?' <a class="src" href="'+escAttr(d.status.source)+'" target="_blank" rel="noopener noreferrer">Source officielle ↗</a>':'')+'</div>';
+  }else if(d.mention) h+='<div class="flag">'+esc(d.mention)+'</div>';
+  if(d.future) h+='<div class="nota"><div class="nota-t">Texte signé — non entré en vigueur</div><p><strong>'+esc(d.future.instrument)+'</strong>. '+esc(d.future.instruction)+' Ce texte est signalé à titre de veille et ne doit pas être appliqué.</p>'+
+    (d.future.url?'<div class="lk"><a class="src" href="'+escAttr(d.future.url)+'" target="_blank" rel="noopener noreferrer">Consulter le texte officiel signé ↗</a></div>':'')+'</div>';
+  if(d.cmlInfo) h+='<div class="nota"><div class="nota-t">Version consolidée et CML</div><p>Le lien principal conduit à une version consolidée intégrant la convention multilatérale. Cette consolidation est publiée à titre informatif et n’est pas opposable. Les dates de prise d’effet doivent être vérifiées pour l’impôt et la période concernés.</p></div>';
+  if(PORTEE_LIMITEE[d.nom]) h+='<div class="nota"><div class="nota-t">Portée limitée ou absence de convention générale</div><p>'+esc(PORTEE_LIMITEE[d.nom])+'</p></div>';
+  if(d.compl||d.proto){
+    const l=[];
+    if(d.compl) l.push(d.compl>1 ? d.compl+' actes complémentaires' : 'un acte complémentaire');
+    if(d.proto) l.push('un protocole annexé');
+    h+='<div class="nota"><div class="nota-t">À signaler</div>'+
+       '<p>Cette convention comporte '+l.join(' et ')+'. Échanges de lettres, accords particuliers, '+
+       'arrangements administratifs et protocoles précisent ou modifient la portée du texte principal '+
+       'et sont opposables au même titre que lui. Ils sont repérés ci-dessous par un astérisque.</p></div>';
+  }
+  const MOT={IR:"revenu",IF:"fortune",S:"successions",D:"donations",DE:"droits d'enregistrement"};
+  const listeFr=a=>a.length<2?(a[0]||""):a.slice(0,-1).join(", ")+" et "+a[a.length-1];
+  const grpSucc=(d.instr||[]).some(g=>/Successions|donations/i.test(g.m));
+  const grpDE=(d.instr||[]).some(g=>/enregistrement/i.test(g.m));
+  const titrePrincipal=()=>{
+    let im=d.impots.slice();
+    if(grpSucc) im=im.filter(x=>!["S","SP","D","DP"].includes(x));
+    if(grpDE) im=im.filter(x=>x!=="DE");
+    if(!im.length) return "Convention";
+    const t=listeFr(im.map(x=>MOT[x]||x));
+    return t.charAt(0).toUpperCase()+t.slice(1);
+  };
+  const LIEN=(g,i)=>{
+    if(i===0) return d.ir;
+    if(/Successions|donations/i.test(g.m)) return d.succ||"";
+    if(/Libéralités/i.test(g.m)) return d.lib||"";
+    return "";
+  };
+  (d.instr||[]).forEach((g,gi)=>{
+    const titre = (g.m==="Impôt sur le revenu") ? titrePrincipal() : g.m;
+    h+='<div class="mini">'+esc(titre)+'</div><ul class="ins">'+
+      g.a.map(x=>{const c=/^(Échange de lettres|Accord particulier|Arrangement administratif)/.test(x);
+        let t=esc(x);
+        if(c) t=t.replace(/^(Échange de lettres|Accord particulier|Arrangement administratif)/,'<b>$1</b>');
+        return '<li'+(c?' class="cpl"':'')+'>'+t+(c?'<sup class="rn">*</sup>':'')+'</li>'}).join("")+'</ul>';
+    if(d.status&&d.status.blocksAll && /Successions|donations|enregistrement/i.test(titre))
+      h+='<div class="lk nolk">Volet non applicable pendant la suspension ou après la dénonciation.</div>';
+    const u=LIEN(g,gi);
+    const lbl = d.status&&d.status.type==="special" ? 'Texte officiel du dispositif'
+              : d.status&&d.status.type==="limited" ? 'Texte officiel de l’accord'
+              : (d.instr.length===1) ? 'Texte officiel de la convention'
+              : 'Texte officiel \u2014 '+titre.toLowerCase();
+    if(u) h+='<div class="lk"><a class="src" href="'+escAttr(u)+'" target="_blank" rel="noopener noreferrer">'+esc(lbl)+' \u2197</a></div>';
+
+  });
+  if(d.impots.length) h+='<div class="mini">Impôts visés</div><div class="pills">'+
+    d.impots.map(i=>'<span class="pill">'+esc(NOMIMP[i]||i)+'</span>').join("")+'</div>';
+  if(d.renvoi) h+='<div class="mini">Instrument distinct</div>'+ 
+    '<div class="lk"><a class="src" href="'+escAttr(d.renvoi[1])+'" target="_blank" rel="noopener noreferrer">'+
+    esc(d.renvoi[0])+' \u2197</a></div>';
+  const resources=(d.resources||[]).filter(r=>r.url&&![d.ir,d.succ,d.lib,d.renvoi&&d.renvoi[1]].includes(r.url));
+  if(resources.length) h+='<div class="verified-sources"><details><summary>Autres textes officiels vérifiés · '+resources.length+'</summary><ul class="resource-list">'+
+    resources.map(r=>'<li><span class="resource-kind">'+esc(r.kind)+'</span><a class="src" href="'+escAttr(r.url)+'" target="_blank" rel="noopener noreferrer">'+esc(r.label)+' ↗</a></li>').join("")+
+    '</ul></details></div>';
+  const nb=[];
+  if(d.compl) nb.push('<p><span class="rn">*</span> Échanges de lettres, accords particuliers et arrangements '+
+    'administratifs. Ces actes précisent ou modifient la portée du texte principal et sont opposables au même titre que lui.</p>');
+  if(d.proto) nb.push('<p>Un protocole est annexé à la convention. Ses stipulations font partie intégrante du texte.</p>');
+  if(nb.length) h+='<div class="nb">'+nb.join("")+'</div>';
+  h+='</div><span class="resize-hint" aria-hidden="true">↘</span>';
+  document.getElementById("dlgc").innerHTML=h;
+  document.querySelector("[data-close-dialog]").addEventListener("click",()=>document.getElementById("dlg").close());
+  document.getElementById("dlg").showModal();
+}
+function ouvrirFuturs(){
+  let h='<div class="fh"><h2>Textes signés non entrés en vigueur</h2><button class="x" type="button" data-close-dialog aria-label="Fermer">✕</button></div><div class="fb">'+
+    '<div class="nota"><div class="nota-t">Règle de lecture</div><p>Ces sept instruments sont recensés à titre de veille mais ne doivent pas être appliqués avant leur entrée en vigueur et leur prise d’effet.</p></div>'+ 
+    '<ul class="resource-list">'+FUTURE_TEXTS.map(x=>'<li><strong>'+esc(x.juridiction)+'</strong> — '+esc(x.instrument)+'. '+esc(x.instruction)+(x.url?' <a class="src" href="'+escAttr(x.url)+'" target="_blank" rel="noopener noreferrer">Texte officiel ↗</a>':'')+'</li>').join('')+'</ul>'+ 
+    '<div class="lk"><a class="src" href="https://www.impots.gouv.fr/les-conventions-internationales" target="_blank" rel="noopener noreferrer">Liste officielle des textes en cours de ratification ↗</a></div></div>';
+  document.getElementById("dlgc").innerHTML=h;
+  document.querySelector("[data-close-dialog]").addEventListener("click",()=>document.getElementById("dlg").close());
+  document.getElementById("dlg").showModal();
+}
+function ouvrirSources(){
+  const sources=[
+    ["Répertoire des conventions internationales et des textes en cours de ratification — DGFiP","https://www.impots.gouv.fr/les-conventions-internationales"],
+    ["Liste des conventions fiscales conclues par la France — BOFiP BOI-ANNX-000306","https://bofip.impots.gouv.fr/bofip/2509-PGP.html/identifiant=BOI-ANNX-000306-20260429"],
+    ["Convention multilatérale BEPS — texte français authentique publié par l’OCDE","https://www.oecd.org/content/dam/oecd/fr/topics/policy-sub-issues/im-beps/convention-multilaterale-pour-la-mise-en-oeuvre-des-mesures-relatives-aux-conventions-fiscales-pour-prevenir-le-beps.pdf"],
+    ["Instrument multilatéral BEPS — page de référence de l’OCDE","https://www.oecd.org/fr/themes/instrument-multilateral-beps.html"]
+  ];
+  const h='<div class="fh"><h2>Sources officielles</h2><button class="x" type="button" data-close-dialog aria-label="Fermer">✕</button></div><div class="fb">'+
+    '<p class="source-intro">L’annuaire privilégie les textes publiés par la DGFiP, le BOFiP, Légifrance, les assemblées parlementaires, l’OCDE et, pour certains textes anciens, le Recueil des traités des Nations unies.</p>'+ 
+    '<ul class="resource-list">'+sources.map(x=>'<li><a class="src" href="'+escAttr(x[1])+'" target="_blank" rel="noopener noreferrer">'+esc(x[0])+' ↗</a></li>').join('')+'</ul>'+ 
+    '<p class="leg">Les versions consolidées intégrant la CML sont publiées à titre informatif. Les textes bilatéraux authentiques, la CML et les dates de prise d’effet doivent être rapprochés pour toute utilisation juridique.</p></div>';
+  document.getElementById("dlgc").innerHTML=h;
+  document.querySelector("[data-close-dialog]").addEventListener("click",()=>document.getElementById("dlg").close());
+  document.getElementById("dlg").showModal();
+}
+function listeOecd(items){
+  return '<ul class="resource-list">'+items.map(x=>'<li>'+
+    (x.year?'<span class="resource-kind">'+esc(x.year)+'</span>':'')+
+    '<a class="src" href="'+escAttr(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.label)+(x.format?' · '+esc(x.format):'')+' ↗</a>'+
+    (x.note?'<span class="oecd-note">'+esc(x.note)+'</span>':'')+'</li>').join('')+'</ul>';
+}
+function ouvrirOecd(){
+  const h='<div class="fh"><h2>Modèles, Commentaires et travaux OCDE</h2><button class="x" type="button" data-close-dialog aria-label="Fermer">✕</button></div><div class="fb">'+
+    '<p class="source-intro">Ressources officielles de l’OCDE utiles pour replacer une convention dans l’état du Modèle et des Commentaires contemporains de sa négociation ou de son application.</p>'+
+    '<p class="oecd-current"><strong>État actuel :</strong> la dernière version complète consolidée disponible en français est celle de 2017. Pour reconstituer l’état postérieur, il faut la rapprocher de la mise à jour de l’article 26 publiée en 2024 et de la mise à jour générale de 2025.</p>'+
+    '<div class="oecd-sections">'+
+      '<details open><summary>Commentaires et Modèles successifs · '+OECD_RESOURCES.models.length+'</summary>'+listeOecd(OECD_RESOURCES.models)+'</details>'+
+      '<details><summary>Travaux du Comité des affaires fiscales · '+OECD_RESOURCES.committee.length+'</summary>'+listeOecd(OECD_RESOURCES.committee)+'</details>'+
+      '<details><summary>Rapports BEPS intégrés au Modèle de 2017 · '+OECD_RESOURCES.beps.length+'</summary>'+listeOecd(OECD_RESOURCES.beps)+'</details>'+
+      '<details><summary>Pages générales et consultations · '+OECD_RESOURCES.general.length+'</summary>'+listeOecd(OECD_RESOURCES.general)+'</details>'+
+    '</div></div>';
+  document.getElementById("dlgc").innerHTML=h;
+  document.querySelector("[data-close-dialog]").addEventListener("click",()=>document.getElementById("dlg").close());
+  document.getElementById("dlg").showModal();
+}
+const resourceMenuToggle=document.getElementById("resourceMenuToggle");
+const resourceMenuPanel=document.getElementById("resourceMenuPanel");
+function fermerMenuRessources(){resourceMenuPanel.hidden=true;resourceMenuToggle.setAttribute("aria-expanded","false")}
+function ouvrirMenuRessources(){resourceMenuPanel.hidden=false;resourceMenuToggle.setAttribute("aria-expanded","true")}
+resourceMenuToggle.addEventListener("click",e=>{e.stopPropagation();resourceMenuPanel.hidden?ouvrirMenuRessources():fermerMenuRessources()});
+document.getElementById("futureTextsButton").addEventListener("click",()=>{fermerMenuRessources();ouvrirFuturs()});
+document.getElementById("officialSourcesButton").addEventListener("click",()=>{fermerMenuRessources();ouvrirSources()});
+document.getElementById("oecdResourcesButton").addEventListener("click",()=>{fermerMenuRessources();ouvrirOecd()});
+document.addEventListener("pointerdown",e=>{if(!e.target.closest(".resource-menu"))fermerMenuRessources()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!resourceMenuPanel.hidden)fermerMenuRessources()});
+document.getElementById("dlg").addEventListener("click",e=>{
+  if(e.target===e.currentTarget)e.currentTarget.close();
+});
+function signalerHauteur(){
+  const height=Math.ceil(document.documentElement.scrollHeight);
+  window.parent.postMessage({type:"annuaire-conventions:resize",height},"*");
+}
+if("ResizeObserver" in window)new ResizeObserver(signalerHauteur).observe(document.body);
+window.addEventListener("load",signalerHauteur);
+window.addEventListener("resize",signalerHauteur);
+rendre();
+signalerHauteur();
+</script>
+</body>
+</html>

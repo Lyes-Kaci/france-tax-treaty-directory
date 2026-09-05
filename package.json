@@ -1,0 +1,18 @@
+{
+  "name": "france-tax-treaty-directory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public directory of tax treaties concluded by France",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build:data": "node scripts/build-public-catalogue.mjs",
+    "build:checksums": "node scripts/build-checksums.mjs",
+    "test:data": "node scripts/build-public-catalogue.mjs --check",
+    "test:release": "node tests/release-integrity.mjs",
+    "test:checksums": "node scripts/build-checksums.mjs --check",
+    "test": "npm run test:data && npm run test:release && npm run test:checksums"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
